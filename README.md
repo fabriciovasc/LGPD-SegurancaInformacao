@@ -7,5 +7,6 @@
 - Eduardo Querido
 - Douglas Henrique
 - João Cruz
+- Rafael Ribeiro
 
 ## Objetivo
