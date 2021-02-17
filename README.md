@@ -1,2 +1,11 @@
 # LGPD-SegurancaInformacao
-Projeto sobre LGPD desenvolvido na matéria de Segurança da Informação da FATEC/SJC
+## Time 
+- Fabrício Vasconcellos
+- Jonatas dos Reis
+- Samuel Xavier
+- Vitor Amorim
+- Eduardo Querido
+- Douglas Henrique
+- João Cruz
+
+## Objetivo
