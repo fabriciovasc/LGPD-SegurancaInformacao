@@ -13,10 +13,10 @@
   
    - Samuel Xavier
 
-
    - Douglas Henrique: [![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/developer-dhbarboza/)](https://www.linkedin.com/in/developer-dhbarboza/) | [![Gmail Badge](https://img.shields.io/badge/-Gmail-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:dev.dhbarboza@gmail.com)](mailto:dev.dhbarboza@gmail.com) | [![Github Badge](https://img.shields.io/badge/-Github-000?style=flat-square&logo=Github&logoColor=white&link=https://github.com/DhBarboza)](https://github.com/DhBarboza)
    - João Cruz
    - Rafael Ribeiro
+   - Cleber Willians da Silva
 
 ## Assunto e Disciplina:
 
@@ -30,5 +30,8 @@ Sendo assim, a disciplina de Segurança da Informação é de extrema importânc
 
 ## Contexto e Objetivo do Projeto:
 
+<p align="center">
+   <img width="600" src="LGPD-SegurancaInformacao/img/LGPD - CONTEXTO.png">
+   
 
 
