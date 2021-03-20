@@ -30,8 +30,16 @@ Sendo assim, a disciplina de Segurança da Informação é de extrema importânc
 
 ## Contexto e Objetivo do Projeto:
 
+Considerando a proposta do projeto, escolhido o tema "Administração de Condomínio". Para contextualização, a denominação condomínio é utilizada quando um mesmo bem ou parte dele pertence a mais de uma pessoa, e todas envolvidas têm igual direito.  A administração de um condomínio é uma tarefa complexa, pois exige uma gestão total de seus processos e também de pessoas, onde podemos englobar a convocação para assembleias, cumprimento de regimento interno, conservação das áreas comuns, cobrança das taxas ordinárias e multas, prestação de contas, a representação do condomínio em juízo ou não, aplicação de multas a moradores, certificação do cumprimento da condomínios à legislação vigente, autorização de entrada e saída de visitantes, liberação de acesso aos moradores, manutenção preventiva e corretiva de equipamentos e edificações, controle das correspondências e encomendas, cadastro de moradores e seus veículos, entre outros.
+
+Conforme descrito, são vários processos que precisam ser controlados, o que tornaria inviável serem de responsabilidade apenas do síndico e por este motivo, outros personagens surgem neste contexto, como o zelador e o porteiro. 
+
+É possível notar que há necessidade de grande coleta e manipulação de dados, onde alguns são sensíveis, por várias pessoas (atores), conforme alguns exemplos abaixo:
+
  ![LGPD - CONTEXTO](https://user-images.githubusercontent.com/51200123/111883458-46c1b180-899a-11eb-9154-c8ce7897f205.png)
  
+ Dentro deste universo de adminstração de condomínio, um brainstorming foi realizado e após considerações, dois assuntos foram considerados pertinentes para a LGPD, conforme segue:
+ 
  ![LGPD - REQUISITOS](https://user-images.githubusercontent.com/51200123/111883521-bb94eb80-899a-11eb-9104-e0ebc3c385fd.png)
-
-https://user-images.githubusercontent.com/51200123/111883521-bb94eb80-899a-11eb-9104-e0ebc3c385fd.png
+ 
+Os requisitos para o desenvolvimento de um sistema ideal para a gestão de um condomínio habitacional deve permitir que todos os seus usuários (atores) consigam interagir, cada um de acordo com o seu papel, de forma eficiente. Sendo assim, é vital que ocorra uma integração entre o sistema de informação e a estrutura do condomínio para que os dados provenientes deste sistema sejam organizados e apresentados da melhor forma possível para proverem informações que serão seguradas e que se mostrem úteis e confiáveis. 
