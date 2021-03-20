@@ -18,4 +18,17 @@
    - João Cruz
    - Rafael Ribeiro
 
-## Objetivo
+## Assunto e Disciplina:
+
+Atualmente, a globalização e a tecnologia trouxeram enormes facilidades no desenvolvimento de atividades de menor a maior complexidade, mas para isto, muitas vezes são utilizadas ferramentas ou recuros que precisam de grande quantidade de dados. Infelizmente, além de vantagens, trouxe também a violação e compartilhamento desenfreado de dados que deveriam ser privados,como por exemplo, a venda de dados de pessoas físicas de quem os detém para empresas de marketing de produtos e serviços gerais ou para crimes de estelionato.
+
+A Lei Geral de Proteção de Dados - LGPD (Lei n. 13.709/2018) tem o intuito de determinar as regras (padrão) na coleta e tratamento dos dados, seja de pessoa física ou jurídica, bem como instituir penalidades a quem transgredir com estas normas, a fim de proteger integralmente os direitos fundamentais à proteção integral à privacidade e liberdade.
+
+A LGPD veio para ser uma proteção ao cliente e exposição positiva ou negativa a quem utiliza e tem acesso aos dados, dependendo da aderência às regras.
+
+Sendo assim, a disciplina de Segurança da Informação é de extrema importância para os futuros profissionais da área de TI, visto que proporcionará a oportunidade de obtenção de conhecimento a respeito da LGPD, através do estudo e desenvolvimento de um projeto prático em torno de um contexto, que será apresentado semanalmente neste repositório e nas aulas da disciplina.
+
+## Contexto e Objetivo do Projeto:
+
+
+
