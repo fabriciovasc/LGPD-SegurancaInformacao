@@ -31,7 +31,7 @@ Sendo assim, a disciplina de Segurança da Informação é de extrema importânc
 ## Contexto e Objetivo do Projeto:
 
 <p align="center">
-   <img width="600" src="LGPD-SegurancaInformacao/img/LGPD - CONTEXTO.png">
+ ![LGPD - CONTEXTO](https://user-images.githubusercontent.com/51200123/111883458-46c1b180-899a-11eb-9154-c8ce7897f205.png)
    
 
 
