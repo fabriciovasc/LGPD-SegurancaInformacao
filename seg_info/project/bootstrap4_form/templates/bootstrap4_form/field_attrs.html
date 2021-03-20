@@ -1,0 +1,8 @@
+{% for name, value in field.field.widget.attrs.items %}
+  {% if value is not False %} {{ name }}{% if value is not True %}="{{ value|stringformat:'s' }}"{% endif %}{% endif %}
+{% endfor %}
+{% if field.field.widget.allow_multiple_selected %}
+  {% if choice_id|safe in field.value|safeseq %}checked{% endif %}
+{% else %}
+  {% if field.value|safe == choice_id|safe %}checked{% endif %}
+{% endif %}

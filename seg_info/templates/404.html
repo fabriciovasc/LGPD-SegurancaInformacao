@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}{{ block.super }} - Página não encontrada{% endblock %} 
+{% block sub_page_name %}
+<h3 class="title">Página não econtrada!</h3>
+{% endblock %} 
+
+{% block content %}
+<div class="alert alert-warning">
+    <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+    Página não econtrada!
+  </div>
+
+{% endblock content %}

@@ -1,0 +1,34 @@
+{% load bs4_form %}
+
+<div class="form-group{% if col %} {{ col }}{% endif %}">
+  <label for="{{ field.auto_id }}" class="{% if inline %}mr-4{% else %}d-block{% endif %}">
+    {{ field.label }}
+    {% if field.field.required %}<span class="text-danger">*</span>{% endif %}
+  </label>
+  {% for choice_id, choice_label in field.field.choices %}
+    {% if custom %}
+      {% if type == 'radio' %}
+        <div class="custom-control custom-radio {% if not vertical %}custom-control-inline{% endif %} mt-1 mb-2">
+      {% elif type == 'checkbox' %}
+        <div class="custom-control custom-checkbox {% if not vertical %}custom-control-inline{% endif %} mt-1 mb-2">
+      {% endif %}
+    {% else %}
+      <div class="form-check {% if not vertical %}form-check-inline{% endif %} mt-1 mb-2">
+    {% endif %}
+      <input
+        id="{{ field.auto_id }}_{{forloop.counter0}}"
+        type="{{ type }}"
+        name="{{ field.html_name }}"
+        value="{{ choice_id }}"
+        {% include "bootstrap4_form/field_attrs.html" %}>
+      <label
+        class="{% if custom %}custom-control-label{% else %}form-check-label{% endif %}"
+        for="{{ field.auto_id }}_{{forloop.counter0}}">
+        {{ choice_label }}
+      </label>
+    </div>
+  {% endfor %}
+  {% include "bootstrap4_form/field_help.html" %}
+  {% include "bootstrap4_form/field_errors.html" with type=type %}
+</div>
+

@@ -1,0 +1,37 @@
+<ul class="navbar-nav mr-auto">
+    {% if user.is_authenticated %}
+        {% for label, secao in secoes.items %}
+            {% if not secao.subsections %}
+                <li class="nav-item{% if secao.active %} active{% endif %}">
+                    <a
+                        class="nav-link"
+                        href="{% if secao.url != '#' %}{% url secao.url %}{% else %}{{ secao.url }}{% endif %}"
+                    >
+                        <i class="fa {{ secao.icon }} blue-icon"></i>
+                        <span class="blue-label">{{ label }}</span>
+                    </a>
+                </li>
+            {% else %}
+                <li class="nav-item dropdown{% if secao.active %} active{% endif %}">
+                    <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        id="md_{{ forloop.counter }}"
+                        role="button"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                    >
+                        <i class="fa {{ secao.icon }} blue-icon"></i>
+                        <span class="blue-label">{{ label }}</span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="md_{{ forloop.counter }}">
+                        {% for item in secao.subsections %}
+                            <a class="dropdown-item{% if item.active %} active{% endif %}" href="{{ item.url }}">{{ item.label }}</a>
+                        {% endfor %}
+                    </div>
+                </li>
+            {% endif %}
+        {% endfor %}
+    {% endif %}
+</ul>

@@ -1,0 +1,80 @@
+<div class="row d-flex align-items-center">
+  <div class="col-sm">
+    <h6 class="text-center text-sm-left m-0">
+      Total de registros encontrados: {{ total_filter_list|default:"0" }}
+    </h6>
+  </div>
+  <div class="col-sm">
+    <div class="float-md-right d-flex justify-content-center">
+      {% if is_paginated %}
+        <nav aria-label="...">
+          <ul class="pagination mb-0">
+            {% if page_obj.number == 1 %}
+              <li class="page-item disabled"><a class="page-link" href="#">
+                <i class="fa fa-angle-double-left blue-icon"></i>
+              </a></li>
+            {% else %}
+              <li class="page-item">
+                <a class="page-link" href="?page=1&{{ query_string }}">
+                <i class="fa fa-angle-double-left blue-icon"></i>
+              </a></li>
+            {% endif %}
+            {% if page_obj.has_previous %}
+              <li class="page-item">
+                <a class="page-link" href="?page={{ page_obj.previous_page_number }}&{{ query_string }}" tabindex="-1">
+                  <i class="fa fa-angle-left blue-icon"></i>
+                </a>
+              </li>
+            {% else %}
+              <li class="page-item disabled"><a class="page-link" href="#">
+                <i class="fa fa-angle-left blue-icon"></i>
+              </a></li>
+            {% endif %}
+            {% for p in paginator.page_range %}
+              {% if p <= page_obj.number|add:"2" and p >= page_obj.number|add:"-2" %}
+                <li class="page-item{% if p == page_obj.number %} active{% endif %}">
+                  <a class="page-link" href="?page={{ p }}&{{ query_string }}">{{ p }}</a>
+                </li>
+              {% endif %}
+            {% endfor %}
+            {% if page_obj.has_next %}
+              <li class="page-item">
+                <a class="page-link" href="?page={{ page_obj.next_page_number }}&{{ query_string }}"><i class="fa fa-angle-right blue-icon"></i></a>
+              </li>
+            {% else %}
+              <li class="page-item disabled"><a class="page-link" href="#"><i class="fa fa-angle-right blue-icon"></i></a></li>
+            {% endif %}
+            {% if page_obj.number == paginator.num_pages %}
+              <li class="page-item disabled"><a class="page-link" href="#">
+                <i class="fa fa-angle-double-right blue-icon"></i>
+              </a></li>
+            {% else %}
+              <li class="page-item">
+                <a class="page-link" href="?page={{ paginator.num_pages }}&{{ query_string }}">
+                <i class="fa fa-angle-double-right blue-icon"></i>
+              </a></li>
+            {% endif %}
+          </ul>
+        </nav>
+      {% else %}
+        <nav aria-label="...">
+          <ul class="pagination mb-0">
+              <li class="page-item disabled"><a class="page-link" href="#">
+                <i class="fa fa-angle-double-left blue-icon"></i>
+              </a></li>
+              <li class="page-item disabled"><a class="page-link" href="#">
+                <i class="fa fa-angle-left blue-icon"></i>
+              </a></li>
+              <li class="page-item active">
+                <a class="page-link btn" href="?page=1&{{ query_string }}">1</a>
+              </li>
+              <li class="page-item disabled"><a class="page-link" href="#"><i class="fa fa-angle-right blue-icon"></i></a></li>
+              <li class="page-item disabled"><a class="page-link" href="#">
+                <i class="fa fa-angle-double-right blue-icon"></i>
+              </a></li>
+          </ul>
+        </nav>
+      {% endif %}
+    </div>
+  </div>
+</div>

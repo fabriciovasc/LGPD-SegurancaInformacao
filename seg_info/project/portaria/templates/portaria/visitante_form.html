@@ -1,0 +1,63 @@
+{% extends "components/base_form.html" %}
+{% load bs4_form %}
+{% load static %}
+{% block extra_css  %}
+ <style>
+  .disabledbutton {
+      pointer-events: none;
+      opacity: 0.7;
+      background-color: #A9A9A9;
+  }
+</style>
+{% endblock extra_css %}
+
+{% block form_content %}
+  {% if user.is_authenticated %}
+    <div class="row">
+      {{ form.nome|as_bs4:"col-md-6" }}
+    </div>
+    <div class="row">
+      {{ form.email|as_bs4:"col-md-6" }}
+    </div>    
+    <div class="row">
+      {{ form.cpf|as_bs4:"col-md-2 col-sm-2" }}
+      {{ form.sexo|as_bs4:"col-md-2 col-sm-3" }}
+    </div>
+    <div class="row">
+      {{ form.ddd|as_bs4:"col-md-1 col-sm-2" }}
+      {{ form.celular|as_bs4:"col-md-3 col-sm-4" }}
+    </div>
+    <div class="row">
+      {{ form.ddd2|as_bs4:"col-md-1 col-sm-2" }}
+      {{ form.telefone|as_bs4:"col-md-3 col-sm-4" }}
+    </div>    
+    <div class="row">
+      {{ form.observacoes|as_bs4:"col-md-6 col-sm-4" }}
+    </div>
+  {% endif %}
+{% endblock form_content %}
+
+{% block extra_js %}
+<script>
+  $(document).ready(function() {
+    $('#id_cpf').mask('000.000.000-00', {reverse: true});
+    $('#id_ddd').mask('(00)', {reverse: false});
+    $('#id_ddd2').mask('(00)', {reverse: false});
+    $('#id_celular').mask('00000-0000', {reverse: true});
+    $('#id_telefone').mask('00000-0000', {reverse: true});
+
+    // modal settings....
+    const modalContainer = $("#modal-container");
+    modalContainer.hide();
+
+    $('#open-modal').click(function() {
+      modalContainer.show();
+    });
+
+    $('#close-modal').click(function() {
+      modalContainer.hide();
+    });
+
+  });
+</script>
+{% endblock extra_js %}

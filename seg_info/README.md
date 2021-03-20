@@ -7,64 +7,55 @@
 
 > pip install virtualenv
 
-#### Acessar o diretório do projeto
+#### Criar a pasta de ambiente virtual
 
-> cd LGPD-SegurancaInformacao\seg_info
-
-#### Criar um diretório para o ambiente virtual
-
-> python -m venv receitas_env / python3 -m venv receitas_env
+> python -m venv env_seginfo / python3 -m venv env_seginfo
 
 #### Para iniciar o ambiente virtual
 
-> source /receitas_env/bin/activate
+> source /env_seginfo/bin/activate
 
 #### Para finalizar o ambiente virtual
 
-> source /receitas_env/bin/deactivate
+> source /env_seginfo/bin/deactivate
 
 
 ## Instalando dependências
 
-> pip/pip3 install -r requirements.txt
+> pip/pip3 install -r dev.txt
 
->> Obs: Deve estar no mesmo diretório do arquivo
+	Obs: Deve estar no mesmo diretório do arquivo --> /seg_info/requirements/dev.txt
 
-> Se tiver problemas com a biblioteca flask-mysqldb, é necessário instalar o seguinte:
-	
-	> sudo apt-get install python-dev default-libmysqlclient-dev libssl-dev 
+#### Criando Banco PostgreSQL
 
+> sudo -u postgres createdb seg_info_db
 
-#### Criando Banco MySQL
-``` sql
-$ mysql -u root
+	Obs: Se o usuário do banco for diferente, será necessário alterar no arquivo de settings "dev.py"
 
-mysql> CREATE USER 'dt_admin'@'localhost' IDENTIFIED BY 'admin2021';
+#### Para aplicar as migrações
 
-mysql> CREATE DATABASE seginfo_db;
-
-mysql> GRANT ALL PRIVILEGES ON seginfo_db . * TO 'dt_admin'@'localhost';
-```
-
-#### Qualquer dúvida sobre o flask-script
-
-> python manage.py db  --help
-
-#### Para iniciar as migrações do projeto
-
-> python manage.py db init
+> python manage.py migrate --settings project.settings.dev
 
 
 #### Para atualizar as migrações do projeto
 
-> python manage.py db revision
-
-
-#### Para aplicar as migrações (após ter criado o banco)
-
-> python manage.py db migrate 
+> python manage.py makemigrations --settings project.settings.dev
 
 
 #### Para rodar a aplicação
 
-> python manage.py runserver
+> python manage.py runserver --settings project.settings.dev
+
+
+#### Para logar na aplicação será necessário um usuário primário
+
+> python manage.py createsuperuser --settings project.settings.dev
+
+	Obs: Assim aparecerá algumas perguntas no terminal/prompt de comando que respondendo será gerado um usuário super
+
+	Exemplo:
+
+	E-mail: administracao@portaria.com.br
+	Nome: Administrador
+	Senha: <senha>
+

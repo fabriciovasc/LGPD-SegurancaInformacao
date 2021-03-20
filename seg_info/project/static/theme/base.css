@@ -1,0 +1,134 @@
+:root {
+	--font-color: #303030;
+	--main-blue: #373c6e;
+	--bold-font: 700;
+}
+
+* {
+	color: var(--font-color);
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+html,
+body {
+	height: 100%;
+	margin: 0;
+}
+
+.base-header {
+	border-bottom: solid 1px #e0e0e0;
+	width: 100%;
+	height: 90px;
+}
+
+.header-title {
+	color: var(--main-blue);
+	font-weight: var(--bold-font);
+}
+
+.btn {
+    border: none !important;
+    background-color: var(--main-blue) !important;
+    color: #fff !important;
+}
+
+.btn:hover {
+	background-color: #373c6ed9 !important;
+	color: #fff !important;
+}
+
+.white-icon {
+    color: #fff !important;
+}
+
+.blue-icon {
+    color: var(--main-blue) !important;
+}
+
+.blue-label {
+    color: var(--main-blue);
+    font-weight: var(--bold-font);
+}
+
+.logo-wrapper {
+	height: 70%;
+	width: 200px;
+}
+
+#logo-header {
+	max-height: 100%;
+	max-width: 100%;
+}
+
+.header-link:hover {
+	text-decoration: none;
+}
+
+.job-wrapper {
+    width: 55%;
+}
+
+.total-candidates {
+	margin-right: 70px;
+}
+
+.job-title {
+	width: 100%;
+}
+
+.job-description {
+	max-width: 50%;
+}
+
+.aside-card {
+	border-radius: 10px;
+	background-color: var(--main-blue);
+	position: sticky;
+	top: 50px;
+	float: right;
+	width: 350px;
+	-webkit-box-shadow: 0px 0px 13px 0px rgba(143,143,143,1);
+	-moz-box-shadow: 0px 0px 13px 0px rgba(143,143,143,1);
+	box-shadow: 0px 0px 13px 0px rgba(143,143,143,1);
+}
+
+.aside-card p,
+ .aside-card h3 {
+	color: #fff !important;
+}
+
+.secondary-btn {
+	background-color: #fff !important;
+	border: solid 2px #fff !important;
+	color: var(--main-blue) !important;
+}
+
+.secondary-btn:hover {
+	background-color: var(--main-blue);
+	color: #fff;
+}
+
+#modal-container {
+	align-items:center;
+	background-color: rgba(0, 0, 0, .6);
+	display: flex;
+	height: 100vh;
+	flex-direction: column;
+	justify-content: center;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100vw;
+	z-index: 10;
+}
+
+.modal-wrapper {
+	background-color: #fff;
+	border-radius: 10px;
+	height: 320px;
+	width: 600px;
+}
+
+#close-modal {
+	font-size: 2em !important;
+}

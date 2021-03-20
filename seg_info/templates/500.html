@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}{{ block.super }} - Erro inesperado!{% endblock %} 
+{% block sub_page_name %}
+<h3 class="title">Erro!</h3>
+{% endblock %} 
+
+{% block content %}
+<div class="alert alert-danger">
+    <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+    Ocorreu um erro inesperado!
+  </div>
+
+{% endblock content %}

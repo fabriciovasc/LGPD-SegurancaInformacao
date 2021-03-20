@@ -1,0 +1,36 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Portaria Online - Área Administrativa</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="{% static 'dist/css/bootstrap.min.css' %}">
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+  </head>
+
+  <body class="text-center">
+    <div class="col-md-3">
+      <div class="col">
+        <img class="mb-8" src="{% static '/theme/imgs/portaria.png' %}" alt="" width="182" height="182">
+      </div>
+      <form class="form-sigin" action="{% url 'login' %}" method="POST">
+          {% csrf_token %}
+          <div class="form-signin"> 
+              <input type="email" class="form-control" id="inputEmail" placeholder="E-mail" name="username">
+          </div>
+          <div class="form-signin">
+              <input type="password" class="form-control" id="inputPassword" placeholder="Senha" name="password">
+          </div>
+          <div class="form-signin">
+              <label class="form-check-label"><input type="checkbox"> Mantenha-me logado</label>
+          </div>
+          <button class="btn btn-primary btn-block" type="submit">Login</button>
+      </form>
+  </div>
+  </body>
+</html>

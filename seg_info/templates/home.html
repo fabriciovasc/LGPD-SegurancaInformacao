@@ -1,0 +1,52 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'theme/style.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="{% static '@fortawesome/fontawesome-free/css/all.min.css' %}">
+    <title>Portaria Online</title>
+</head>
+
+<body>
+    <div class="home d-flex flex-column justify-content-start align-items-center">
+        <header class="header d-flex justify-content-center align-items-center bg-light">
+            <div class="header-wrapper d-flex justify-content-center align-items-center px-3">
+                <h1 class="text-nowrap m-0 header-title">Portal Online</h1>
+                <div class="logo-wrapper">
+                    <a href="https://www.gsw.com.br/" target="_blank">
+                        <img id="logo-home" src="{% static '/theme/imgs/portaria.png' %}" alt="logo Poraria" class="p-0">
+                    </a>
+                </div>
+            </div>
+        </header>
+        <div class="home-container my-4 d-flex flex-column justify-content-around align-items-start px-3">
+            <div class="container__content d-flex justify-content-around align-items-center">
+                <div class="home-content__image-wrapper">
+                    <img src="{% static '/theme/imgs/resume-home.svg' %}" alt="imagem1">
+                </div>
+                <div class="home-content__wrapper">
+                    <h2>Portaria Online</h2>
+                    <a class="btn btn-action" href="{% url 'login' %}" role="button">Entrar</a>
+                </div>
+            </div>
+            <div class="container__content d-flex justify-content-around align-items-center">
+                <div class="home-content__wrapper">
+                </div>
+                <div class="home-content__image-wrapper">
+                    <img src="{% static '/theme/imgs/available-jobs.svg' %}" alt="imagem2">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="{% static 'js/jquery-3.4.0.min.js' %}"></script>
+    <script src="{% static 'js/jquery.mask.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+
+</body>
+
+</html>

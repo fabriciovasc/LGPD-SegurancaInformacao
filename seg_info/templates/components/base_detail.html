@@ -1,0 +1,93 @@
+{% extends "base.html" %}
+{% load static %}
+{% comment %}
+{% block page_header %}
+  <h3 class="title" title="{{ pagename|capfirst }}">
+    {{ pagename|capfirst }}
+  </h3>
+{% endblock page_header %}
+{% endcomment %}
+
+{% block page_header_collapsed %}
+  {{ pagename|capfirst }} 
+{% endblock page_header_collapsed %}
+
+
+{% block sub_page_name %}
+<h3 class="title">
+  {{ object }}
+  ({{ sub_pagename|default:model_verbose_name }})
+</h3>
+{% endblock sub_page_name %}
+
+
+{% block content %}
+  <article>
+    <section>
+      <div class="row">
+        <div class="col col-md-12">
+          <div class="card card-primary">
+            {% block card_header %}
+              <div class="card-header bg-ligth">
+                {% block extra_card_head %}
+                {% endblock extra_card_head %}
+              </div>
+            {% endblock card_header %}
+            <div class="card-body">
+              {% block obj_content %}
+                {% for row in data %}
+                  <div class="row justify-content-left">
+                    {% for key, value in row %}
+                      <div class="col-md-4">
+                        <dl>
+                          <dt>{{ key }}</dt>
+                          <dd> 
+                            <p class="text-justify">
+                              {% if value == True or value == False %}{{ value|yesno:"Sim,Não" }}{% else %}{{ value|default:"----"}}{% endif %}
+                            </p>
+                          </dd>
+                        </dl>
+                      </div>
+                    {% endfor %}
+                  </div>
+                {% endfor %}
+              {% endblock obj_content %}
+              {% block extra_obj_content %}{% endblock extra_obj_content %}
+            </div>
+
+            {% block card_footer %}
+            <div class="card-footer">
+              <div class="row justify-content-between">
+                {% block list_url %}
+                <div class="col-md-2">
+                  {% if list_url %}
+                    <a class="btn btn-outline-primary" href="{% url list_url %}">
+                      <i class="fa fa-arrow-circle-o-left"></i> Voltar
+                    </a>
+                  {% endif %}
+                </div>
+                {% endblock list_url %}
+                {% block update_url %}
+                <div class="col-md-2">
+                  {% if update_url %}
+                  <a href="{% url update_url object.pk %}" class="float-right btn btn-primary">
+                    <i class="fa fa-pen"></i>
+                    Editar
+                  </a>
+                  {% endif %}
+                </div>
+                {% endblock update_url %}
+              </div>
+            </div>
+            {% endblock card_footer %}
+          </div>
+        </div>
+      </div>
+      {% block extra_cards %}{% endblock extra_cards %}
+    </section>
+  </article>
+{% endblock content %}
+
+{% block modals %}
+  {{ block.super }}
+{% endblock modals %}

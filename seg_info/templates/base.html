@@ -1,0 +1,91 @@
+{% load staticfiles %}<!doctype html>
+<html lang="pt-BR">
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!-- Bootstrap CSS -->
+      <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+      <link rel="stylesheet" href="{% static '@fortawesome/fontawesome-free/css/all.min.css' %}">
+      <link rel="stylesheet" href="{% static '/theme/base.css' %}">
+      <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap"
+      rel="stylesheet">
+      {% block css %}
+      {% endblock css %}
+      {% block extra_css %}
+      {% endblock extra_css %}
+      <title>{% block title %}Portaria Online{% endblock title %}</title>
+   </head>
+   <body>
+      <div class="base-header bg-light d-flex flex-column flex-md-row align-items-center justify-content-between p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+        {% if user.is_authenticated %}
+        <a href="/" class="header-link">
+          <h5 class="my-0 header-title">Portaria Online</h5>
+        </a>
+         {% else %}
+         <h5 class="my-0 header-title">Portaria Online</h5>
+         {% endif %}
+         <div class="logo-wrapper">
+            <a href="{% url 'visitante_list' %}">
+                <img id="logo-header" src="{% static '/theme/imgs/portaria.png' %}" alt="logo Portaria" class="p-0">
+            </a>
+        </div>
+         {% if user.is_authenticated %}
+         <a class="btn btn-outline-primary" href="/logout/">Sair</a>
+         {% else %}
+         <a class="btn btn-outline-primary" href="/">Home</a>
+         {% endif %}
+      </div>
+      {% if user.is_authenticated %}
+      {% block navbarwrapper %}
+      <nav class="navbar navbar-expand-sm navbar-light bg-light rounded">
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            {% block navbar %}
+            {% include 'components/menu.html' %}
+            {% endblock navbar %}
+         </div>
+      </nav>
+      {% endblock navbarwrapper %}
+      {% endif %}
+      <div class="container-fluid">
+         <header class="header">
+            {% block sub_page_name %}
+            {% if sub_pagename %}
+            <h3 class="title">
+               ({{ sub_pagename|capfirst }})
+            </h3>
+            {% endif %}
+            {% endblock sub_page_name %}
+         </header>
+         <div class="messages-block">
+            {% if messages %}
+            {% autoescape off %}
+            {% for message in messages %}
+            <div class="alert{% if message.tags %} alert-{%if 'error' in message.tags %}danger{% else %}{{ message.tags }}{% endif %}{% endif %}">
+               {% if 'info' in message.tags %}<i class="fa fa-info-circle" aria-hidden="true"></i>{% endif %}
+               {% if 'warning' in message.tags %}<i class="fa fa-exclamation-circle" aria-hidden="true"></i>{% endif %}
+               {% if 'success' in message.tags %}<i class="fa fa-check-circle" aria-hidden="true"></i>{% endif %}
+               {% if 'error' in message.tags %}<i class="fa fa-exclamation-circle" aria-hidden="true"></i>{% endif %}
+               {{ message }}
+               <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+               <span aria-hidden="true">&times;</span>
+               </button>
+            </div>
+            {% endfor %}
+            {% endautoescape %}
+            {% endif %}
+         </div>
+         {% block content %}
+         {% endblock content %}
+      </div>
+      {% block modals %}{% endblock modals %}
+      <script src="{% static 'js/jquery-3.4.0.min.js' %}"></script>
+      <script src="{% static 'js/jquery.mask.min.js' %}"></script>
+      <script src="{% static 'js/bootstrap.min.js' %}"></script>
+      {% block javascript %}
+      {% endblock javascript %}
+      {% block extra_js %}
+      {% endblock extra_js %}
+   </body>
+</html>

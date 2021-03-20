@@ -1,0 +1,23 @@
+{% extends "components/base_form.html" %}
+{% load bs4_form %}
+
+
+{% block form_content %}
+  <div class="row">
+    {{ form.nome|as_bs4:"col-md-6" }}
+  </div>
+
+  <div class="row">
+    {{ form.password|as_bs4:"col-md-6" }}
+  </div>
+  <div class="row">
+    {{ form.email|as_bs4:"col-md-6" }}
+  </div>
+  <div class="row">
+    {{ form.is_active|as_bs4:"col-md-6" }}
+  </div>
+  
+  <div class="row">
+    {{ form.is_staff|as_bs4:"col-md-6" }}
+  </div>
+{% endblock form_content %}

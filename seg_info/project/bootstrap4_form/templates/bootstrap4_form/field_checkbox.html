@@ -1,0 +1,23 @@
+{% if custom %}
+  <div class="form-group{% if col %} {{ col }}{% endif %}">
+    <div class="custom-control custom-checkbox">
+      {{ field }}
+      <label class="custom-control-label" for="{{ field.auto_id }}">
+        {{ field.label }}
+      </label>
+    </div>
+    {% include "bootstrap4_form/field_help.html" %}
+    {% include "bootstrap4_form/field_errors.html" %}
+  </div>
+{% else %}
+  <div class="form-group{% if col %} {{ col }}{% endif %}">
+    <div class="form-check">
+      {{ field }}
+      <label class="form-check-label" for="{{ field.auto_id }}">
+        {{ field.label }}
+      </label>
+    </div>
+    {% include "bootstrap4_form/field_help.html" %}
+    {% include "bootstrap4_form/field_errors.html" %}
+  </div>
+{% endif %}

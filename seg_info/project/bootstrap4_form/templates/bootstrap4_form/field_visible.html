@@ -1,0 +1,9 @@
+{% if input_type == "checkbox" %}
+  {% include "bootstrap4_form/field_checkbox.html" %}
+{% elif input_type == "multicheckbox" %}
+  {% include "bootstrap4_form/field_choices.html" with type="checkbox" %}
+{% elif input_type == "radioset" %}
+  {% include "bootstrap4_form/field_choices.html" with type="radio" %}
+{% else %}
+  {% include "bootstrap4_form/field_default.html" %}
+{% endif %}

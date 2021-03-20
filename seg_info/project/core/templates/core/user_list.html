@@ -1,0 +1,19 @@
+{% extends "components/base_list.html" %}
+{% load user_can_delete %}
+
+{% block table_content %}
+  <tr>
+    <th class="ordered">Nome</th>
+  </tr>
+  {% for obj in object_list %}
+  <tr>
+    <td>
+      <a href="{% url update_url obj.pk %}">
+        {{ obj.nome }}
+      </a>
+    </td>
+  </tr>
+  {% empty %}
+    {% include 'components/empty_list.html' %}
+  {% endfor %}
+{% endblock table_content %}

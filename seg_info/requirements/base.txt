@@ -1,0 +1,28 @@
+# ****************************************************************************#
+#
+#           Use este arquivo para libs que devem estar presentes
+#                   EM TODOS os ambientes (PROD e DEV)
+#
+# dentro da pasta **requirements** existem 3 arquivos para requirements:
+#    - `base.txt`: com libs python para PROD E DEV
+#    - `prod.txt`: com libs python somente para PROD + base.txt
+#    - `dev.txt`: com libs python somente para DEV + base.txt
+#
+#     PROD e DEV "importam" ou incluem as libs requerdidas em BASE.txt
+#
+# Se dor um pacote específico para PROD adicione o pacote em `prod.txt`
+# Se dor um pacote específico para DEV adicione o pacote em `dev.txt`
+# Se dor um pacote para o sistema (Dev e Prod) adicione o pacote em `base.txt`
+#
+#*****************************************************************************#
+
+# Adicionae Libs Para PRODUCAO E Desenvolvimento abaixo
+# =====================================================
+
+Django==2.2
+psycopg2-binary==2.8.5
+rules==2.0.1
+Pillow==8.1.2
+chardet==3.0.4
+django_select2==7.2.4
+

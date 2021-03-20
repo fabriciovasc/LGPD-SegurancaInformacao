@@ -1,0 +1,42 @@
+{% load bs3_form %}
+{% load i18n %}
+<fieldset>
+  <!-- SearchField Q  -->
+  <div class="row form-inline">
+    <div class="col-md-12">
+      <div class="input-group" name="widget-search" style="display: flex;">
+        {% if form.get_advanced_search_fields %}
+        <span class="input-group-btn">
+          <a class="btn btn-default btn-default" href="javascript:toggleAdvancedSearch()" id="advanced-search-control">
+          <i class="fa fa-{% if request.GET.adv == '1' %}minus{% else %}plus{% endif %}"></i></a>
+        </span>
+        {% endif %}
+        <input type="text" class="form-control" id="{{ form.q.auto_id }}" name="{{form.q.name}}" value="{{ form.q.value|default:"" }}" {% for k, v in form.q.field.widget.attrs.items %} {{ k }}="{{ v }}"{% endfor %}>
+        <span class="input-group-btn">
+          <button class="btn btn-default btn-info" type="submit"><i class="fa fa-search"></i></button>
+          <button class="btn btn-default btn-default" name="clear" onclick="clearForm($(' form '))"><i class="fa fa-remove"></i></button>
+        </span>
+        <input type="hidden" name="adv" value="{{ request.GET.adv }}" id="advanced-search-enabled">
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          {% if form.q.help_text %}<span id="{{form.q.auto_id}}_helpblock" class="help-block">{{ form.q.help_text }}</span>{% endif %}
+          {% if form.q.errors %} <span id="{{form.q.auto_id}}_errorlock" class="text-danger">{{ form.q.errors|join:", " }}</span>{% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {% block advanced_search_fields %}
+  <fieldset id="advanced-search" {% if request.GET.adv != "1" %}style="display:none;"{% endif %}>
+  <caption>{% trans "Pesquisa avançada" %} </caption>
+  
+    <div class="row" style="display: inline;">
+      {% for field in form.get_advanced_search_fields %}
+        {{ field|as_bs3:"" }}
+      {% endfor %}
+    </div>
+
+  </fieldset>
+  {% endblock advanced_search_fields %}
+</fieldset>

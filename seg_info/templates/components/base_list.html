@@ -1,0 +1,142 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block extra_css %}
+  {{ form.media.css }}
+{% endblock extra_css %}
+
+{% comment %}
+{% block page_header %}
+  <h3 class="title my-4">{{ pagename|capfirst }}</h3>
+{% endblock page_header %}
+{% endcomment %}
+
+{% block sub_page_name %}
+  <h3 class="title my-4">{{ sub_pagename|default:model_verbose_name_plural|capfirst }}</h3>
+{% endblock sub_page_name %}
+
+{% block content %}
+  <article>
+    <section>
+      <div class="row">
+        <div class="col col-md-12">
+          <div class="card card-primary">
+            {% block card_header %}
+              <div class="card-header bg-light">
+                {% block extra_card_head %}
+                {% endblock extra_card_head %}
+                {% block crete_url_block %}
+                  {% if create_url %}
+                    {% if user.is_authenticated %}
+                    <div class="float-right d-inline-block">
+                      <a class="btn btn-sm btn-primary" href="{% url create_url %}">
+                        <i class="fa fa-plus white-icon"></i> Adicionar
+                      </a>
+                    </div>
+                    {% endif %}
+                  {% endif %}
+                {% endblock crete_url_block %}
+              </div>
+            {% endblock card_header %}
+            <div class="card-body">
+              <form id="search_form" method="GET" {% block action %}action="."{% endblock %}>
+                <div class="form-row justify-content-between d-print-none">
+                  <div class="form-group col-md-6">
+                    <label for="id_q">Pesquisar</label>
+                    <div class="input-group mb-0">
+                      <input id="q" value="{{ form.q.value|default:'' }}" type="text" name="q" class="form-control float-right search-input" placeholder="{{ form.get_q_placeholder }}" />
+                      <div class="input-group-append">
+                        <button
+                          class="btn btn-sm btn-primary"
+                          data-toggle="tooltip"
+                          title="Pesquisar"
+                          data-placement="top"
+                          type="submit">
+                          <i class="fa fa-search white-icon"></i>
+                        </button>
+                        {% if has_advanced_search %}
+                          <button
+                            class="btn btn-sm btn-outline-primary float-right"
+                            onclick="javascript:show_filter_fields(this);"
+                            data-toggle="tooltip"
+                            title="Filtro Avançado"
+                            data-placement="top"
+                            type="button">
+                            <i class="fa fa-filter"></i> 
+                          </button>
+                        {% endif %}
+                      </div>
+                    </div>
+                  </div>
+                  {% block paginate_opt %}
+                  <div class="form-group col-md-2 col-lg-2 col-xl-1">
+                    <label for="id_paginate_by">Paginar por</label>
+                    <select id="id_paginate_by" class="form-control" name="paginate_by">
+                      <option value="10"{% if paginate_by == 10 %} selected{% endif %}>10</option>
+                      <option value="15"{% if paginate_by == 15 %} selected{% endif %}>15</option>
+                      <option value="20"{% if paginate_by == 20 %} selected{% endif %}>20</option>
+                    </select>
+                  </div>
+                  {% endblock paginate_opt %}
+                </div>
+                {% if has_advanced_search %}
+                <div class="advanced-search-form off" style="display: none">
+                  {% block search_form %}{% endblock search_form %}
+                </div>
+                {% endif %}
+              </form>
+              {% if form.q.value %}
+                <span>Mostrando resultados para <span class="blue-label">{{ form.q.value }}</span></span>
+              {% endif %}
+              {% block table_options %}{% endblock table_options %}
+              <div class="table-responsive mt-5">
+                <table class="table table-sm table-striped table-bordered table-hover mb-0">
+                  {% block table_content %}{% endblock table_content %}
+                </table>
+              </div>
+              {% block extra_content %}{% endblock extra_content %}
+            </div>
+            <div class="card-footer">
+              {% block card_footer %}
+                {% include "components/pagination.html" %}
+              {% endblock card_footer %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    {% block extra_cards %}
+    {% endblock extra_cards %}
+  </article>
+{% endblock content %}
+
+{% block javascript %}
+  {{ form.media.js }}
+  <script type="text/javascript" src="{% static 'js/ordered-table.js' %}"></script>
+  <script type="text/javascript">
+    
+    // É possível passar os icone que serão usados por aqui
+    // A ordem é: icone padrão (sem ordenar), ordenagem crescente, ordenagem decrescente
+    orderedTable();
+
+    $(document).ready(function (){
+      $("#btn_clean").click(function(){
+        document.location.href = '{{ request_path }}';
+      });
+      $('#id_paginate_by').change(function(){
+        $('#search_form').submit();
+      });
+    });
+    var show_filter_fields = function() {
+      $('.advanced-search-form').slideToggle('slow', function() {
+        $('.advanced-search-form').toggleClass('off');
+        if ($('.advanced-search-form').is('.off')) {
+          $('.advanced-search-form-label').text('Filtro Avançado');
+        } else {
+          $('.advanced-search-form-label').text('Esconder filtro');
+        }
+
+      });
+    };
+  </script>
+{% endblock javascript %}
