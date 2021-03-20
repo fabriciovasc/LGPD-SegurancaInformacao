@@ -7,23 +7,21 @@
 
 > pip install virtualenv
 
+#### Acessar o diretório do projeto
+
+> cd LGPD-SegurancaInformacao\seg_info
+
 #### Criar um diretório para o ambiente virtual
 
-> mkdir receitas_env
-
-#### Gerar o virtual env dentro da pasta de receitas_env
-
-> virtualenv receitas
-
->> Obs: se houver problema é possivel criar o ambiente virtual com o seguinte comando: python -m venv receitas / python3 -m venv receitas
+> python -m venv receitas_env / python3 -m venv receitas_env
 
 #### Para iniciar o ambiente virtual
 
-> source /receitas_env/receitas/bin/activate
+> source /receitas_env/bin/activate
 
 #### Para finalizar o ambiente virtual
 
-> source /receitas_env/receitas/bin/deactivate
+> source /receitas_env/bin/deactivate
 
 
 ## Instalando dependências
