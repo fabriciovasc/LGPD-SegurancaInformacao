@@ -48,4 +48,29 @@ Conforme descrito, são vários processos que precisam ser controlados, o que to
  ![LGPD - REQUISITOS](https://user-images.githubusercontent.com/51200123/111883521-bb94eb80-899a-11eb-9104-e0ebc3c385fd.png)
  
 Levando-se em consideração os pontos destacados acima, trataremos do desenvolvimento de uma aplicação simples com um CRUD (Create, Read, Update, Delete) com acesso a bancos de dados voltada ao controle de acessos dos atores, bem como no registro das ações, considerando o que foi feito, bem como a data e horário de execução.
+
+## ESTRUTURAÇÃO & PLANEJAMENTO
+
+![EAP](https://user-images.githubusercontent.com/51200123/111904317-1410cb00-8a25-11eb-9aae-06849d0707fa.png)
+
+## Sprint 0 - 25/02 A 10/03:
+
+Entregáveis da Sprint:
+-	Organização da Equipe; ✔
+-	Criação do repositório; ✔
+-	Definição do tema; ✔
+-	Definição dos requisitos escolhidos da LGPD. ✔
+
+## Sprint 1 - 11/03 A 24/03:
+
+Entregáveis da Sprint:
+-	Técnicas e Ferramentas aplicáveis; ✔
+-	Plano de Desenvolvimento de Software; ✔
+-	Minimum Viable Product (MVP). ✔
+
+Entrega 1 📎
+
+## BACK-END
+
+![WhatsApp Image 2021-03-20 at 19 47 03](https://user-images.githubusercontent.com/51200123/111902628-2424ac80-8a1d-11eb-8058-66655cea162a.jpeg)
  
