@@ -38,8 +38,11 @@ Conforme descrito, são vários processos que precisam ser controlados, o que to
 
  ![LGPD - CONTEXTO](https://user-images.githubusercontent.com/51200123/111883458-46c1b180-899a-11eb-9154-c8ce7897f205.png)
  
- Dentro deste universo de adminstração de condomínio, um brainstorming foi realizado e após considerações, dois assuntos foram considerados pertinentes para a LGPD, conforme segue:
+ Os requisitos para o desenvolvimento de um sistema ideal para a gestão de um condomínio habitacional deve permitir que todos os seus usuários (atores) consigam interagir, cada um de acordo com o seu papel, de forma eficiente. Sendo assim, é vital que ocorra uma integração entre o sistema de informação e a estrutura do condomínio para que os dados provenientes deste sistema sejam organizados e apresentados da melhor forma possível para proverem informações que serão seguradas e que se mostrem úteis e confiáveis. 
+ 
+ Dentro deste universo de administração de condomínio, um brainstorming foi realizado e após considerações, dois assuntos foram considerados pertinentes para a LGPD, conforme segue:
  
  ![LGPD - REQUISITOS](https://user-images.githubusercontent.com/51200123/111883521-bb94eb80-899a-11eb-9104-e0ebc3c385fd.png)
  
-Os requisitos para o desenvolvimento de um sistema ideal para a gestão de um condomínio habitacional deve permitir que todos os seus usuários (atores) consigam interagir, cada um de acordo com o seu papel, de forma eficiente. Sendo assim, é vital que ocorra uma integração entre o sistema de informação e a estrutura do condomínio para que os dados provenientes deste sistema sejam organizados e apresentados da melhor forma possível para proverem informações que serão seguradas e que se mostrem úteis e confiáveis. 
+Levando-se em consideração os pontos destacados acima, trataremos do desenvolvimento de uma aplicação simples com um CRUD (Create, Read, Update, Delete) com acesso a bancos de dados voltada ao controle de acessos dos atores, bem como no registro das ações, considerando o que foi feito, bem como a data e horário de execução.
+ 
