@@ -42,14 +42,14 @@ Conforme descrito, são vários processos que precisam ser controlados, o que to
  ![LGPD - CONTEXTO](https://user-images.githubusercontent.com/51200123/111883458-46c1b180-899a-11eb-9154-c8ce7897f205.png)
 
 Ao avaliar o ator Porteiro, dentro do sistema, as seguintes competências e funções podem ser citadas para o mesmo, em relação à manipulação de dados:
-•	Efetuar cadastro no sistema;
-•	Efetuar login no sistema;
-•	Coletar e cadastrar os dados pessoais de prestadores de serviço e visitantes, a fim de posterior liberação de acesso ao condomínio;
-•	Visualizar o histórico de liberação de acesso de visitantes e terceiros (prestadores de serviço);
-•	Visualizar os dados das unidades, bem como alterar e incluir dados dos moradores (dependentes), animais de estimação e veículos;
-•	Coletar dados de reconhecimento biométrico e facial dos moradores, ou seja, respectivamente, as impressões digitais e imagens;
-•	Coletar e cadastrar os dados de veículos para posterior liberação de acesso ao condomínio;
-•	Etc.
+- Efetuar cadastro no sistema;
+- Efetuar login no sistema;
+- Coletar e cadastrar os dados pessoais de prestadores de serviço e visitantes, a fim de posterior liberação de acesso ao condomínio;
+- Visualizar o histórico de liberação de acesso de visitantes e terceiros (prestadores de serviço);
+- Visualizar os dados das unidades, bem como alterar e incluir dados dos moradores (dependentes), animais de estimação e veículos;
+- Coletar dados de reconhecimento biométrico e facial dos moradores, ou seja, respectivamente, as impressões digitais e imagens;
+- Coletar e cadastrar os dados de veículos para posterior liberação de acesso ao condomínio;
+- Etc.
 
 Destaca-se ainda que o síndico e/ou administradora, tem acesso às demonstrações financeiras do condomínio, como despesa, dívida, receita e reserva.
 
