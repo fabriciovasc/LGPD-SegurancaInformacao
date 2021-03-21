@@ -46,7 +46,7 @@ Ao avaliar o ator Porteiro, dentro do sistema, as seguintes competências e fun�
 - Efetuar login no sistema;
 - Coletar e cadastrar os dados pessoais de prestadores de serviço e visitantes, a fim de posterior liberação de acesso ao condomínio;
 - Visualizar o histórico de liberação de acesso de visitantes e terceiros (prestadores de serviço);
-- Visualizar os dados das unidades, bem como alterar e incluir dados dos moradores (dependentes), animais de estimação e veículos;
+- Visualizar os dados das unidades, bem como incluir e excluir dados dos moradores (dependentes), animais de estimação e veículos;
 - Coletar dados de reconhecimento biométrico e facial dos moradores, ou seja, respectivamente, as impressões digitais e imagens;
 - Coletar e cadastrar os dados de veículos para posterior liberação de acesso ao condomínio;
 - Etc.
