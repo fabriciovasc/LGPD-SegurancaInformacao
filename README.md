@@ -73,7 +73,7 @@ Entregáveis da Sprint:
 -	Definição do tema; ✔
 -	Definição dos requisitos escolhidos da LGPD. ✔
 
-## Sprint 1 - 11/03 A 24/03:
+## Sprint 1 - 11/03 A 28/03:
 
 Entregáveis da Sprint:
 -	Técnicas e Ferramentas aplicáveis; ✔
@@ -81,6 +81,17 @@ Entregáveis da Sprint:
 -	Minimum Viable Product (MVP). ✔
 
 Entrega 1 📎
+
+### De acodordo com a LGPD(Lei Geral de Proteção de Dados) CAPÍTULO III DOS DIREITOS DO TITULAR   
+#### [Art. 18](http://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm) - Declara: O titular dos dados pessoais tem direito a obter do controlador, em relação aos dados do titular por ele tratados, a qualquer momento e mediante requisição.   
+I - Confirmação de existência de tratamento;    
+
+O sistema utiliza-se **log de dados**, que é uma expressão utilizada para descrever o processo de registro de eventos relevantes num sistema computacional. Esse registro pode ser utilizado para restabelecer o estado original de um sistema ou para que um administrador conheça o seu comportamento no passado. Um arquivo de log pode ser utilizado para auditoria e diagnóstico de problemas.   
+
+Ademais, os logs possuem grande importância para o Direito da Tecnologia da Informação. A possibilidade de identificar a autoria de ações no ambiente virtual, permitindo a responsabilização dos autores, só é possível através da análise de logs. Os logs também podem ser entendidos como provas digitais.   
+
+O termo log em computação é tão utilizado que até no processo de se entrar no log de dados e deixar registrado todo o histórico de navegação pelo sistema utiliza-se, por questões de segurança, e registro do usuário, o famoso `Login` ou `logon` e para a saída do sistema o `Logoff`, ou ainda `Logout`.
+
 
 ## BACK-END
 
