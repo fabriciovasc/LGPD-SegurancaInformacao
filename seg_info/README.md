@@ -21,11 +21,13 @@
 
 #### Para iniciar o ambiente virtual
 
-> source /env_seginfo/Scripts/activate
+> source /env_seginfo/Scripts/activate  - No windows
+> source /env_seginfo/bin/activate  - No Linux
 
 #### Para finalizar o ambiente virtual
 
-> source /env_seginfo/Scripts/deactivate
+> source /env_seginfo/Scripts/deactivate - No windows
+> source /env_seginfo/bin/deactivate - No Linux
 
 
 ## Instalando dependências
