@@ -1,6 +1,14 @@
 # Este README serve para informações do projeto
 
 
+## Clonar o repositório
+
+> git clone https://github.com/fabsvas/LGPD-SegurancaInformacao
+
+# Acessar a pasta do repositório
+
+> cd LGPD-SegurancaInformacao/seg_info
+
 ## Virtualenv
 
 #### Para baixar o virtualenv
@@ -13,18 +21,18 @@
 
 #### Para iniciar o ambiente virtual
 
-> source /env_seginfo/bin/activate
+> source /env_seginfo/Scripts/activate
 
 #### Para finalizar o ambiente virtual
 
-> source /env_seginfo/bin/deactivate
+> source /env_seginfo/Scripts/deactivate
 
 
 ## Instalando dependências
 
-> pip/pip3 install -r dev.txt
+> pip/pip3 install -r requirements/dev.txt
 
-	Obs: Deve estar no mesmo diretório do arquivo --> /seg_info/requirements/dev.txt
+	
 
 #### Criando Banco PostgreSQL
 
