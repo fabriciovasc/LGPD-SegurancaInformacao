@@ -69,18 +69,7 @@ Os requisitos para o desenvolvimento de um sistema ideal para a gestão de um co
  
 Levando-se em consideração os pontos destacados acima, trataremos do desenvolvimento de uma aplicação simples com um CRUD (Create, Read, Update, Delete) com acesso a bancos de dados voltada ao controle de acessos dos atores, bem como no registro das ações (logs), considerando o que foi feito, bem como a data e horário de execução.
 
-## ESTRUTURAÇÃO & PLANEJAMENTO
 
-![EAP](https://user-images.githubusercontent.com/51200123/111904317-1410cb00-8a25-11eb-9aae-06849d0707fa.png)
-
-## Sprint 1 - 11/03 A 28/03:
-
-Entregáveis da Sprint:
--	Técnicas e Ferramentas aplicáveis; ✔
--	Plano de Desenvolvimento de Software; ✔
--	Minimum Viable Product (MVP). ✔
-
-Entrega 1 📎
 
 ### De acodordo com a LGPD(Lei Geral de Proteção de Dados) CAPÍTULO III DOS DIREITOS DO TITULAR   
 #### [Art. 18](http://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm) - Declara: O titular dos dados pessoais tem direito a obter do controlador, em relação aos dados do titular por ele tratados, a qualquer momento e mediante requisição.   
@@ -93,10 +82,28 @@ Ademais, os logs possuem grande importância para o Direito da Tecnologia da Inf
 O termo log em computação é tão utilizado que até no processo de se entrar no log de dados e deixar registrado todo o histórico de navegação pelo sistema utiliza-se, por questões de segurança, e registro do usuário, o famoso `Login` ou `logon` e para a saída do sistema o `Logoff`, ou ainda `Logout`.
 
 
-## BACK-END
+## Sprint 1 - 11/03 A 28/03:
 
-![WhatsApp Image 2021-03-20 at 19 47 03](https://user-images.githubusercontent.com/51200123/111902628-2424ac80-8a1d-11eb-8058-66655cea162a.jpeg)
+Entregáveis da Sprint:
+-	Plano de Desenvolvimento de Software; ✔
+-	Técnicas e Ferramentas aplicáveis; ✔
+-	Minimum Viable Product (MVP). ✔
 
+## ESTRUTURAÇÃO & PLANEJAMENTO
+
+![EAP](https://user-images.githubusercontent.com/51200123/111904317-1410cb00-8a25-11eb-9aae-06849d0707fa.png)
+
+## FERRAMENTAS
+
+Por se tratar de uma plataforma web, definimos que iriamos trabalha com alguma linguagem que nos proporcione facilidade na criação de aplicações web. Visto que todos os integrantes já possuem uma certa familiaridade com a linguagem PYTHON, ficou decidido que esta será a linguagem que iremos utilizar no projeto como BACKEND. PYTHON nos providencia dois frameworks para trabalhos em aplicações web, tais como  DJANGO e FLASK. Em conversa com todos os integrantes, ficou decidido que o framework 
+Django será utilizado devido a sua vasta utilização em comparação ao FLASK dentro da 
+comunidade OPEN SOURCE.
+Em FRONTEND, será utilizado HTML, CSS e JS, há a possibilidade de se implementar REACT.JS como parte do front para facilitar na criação de certos componentes e visuais. 
+Para forma de organização da equipe, iremos utilizar a metodologia ágil conhecida como Scrum, sendo definidas 7 entregas com tempo de duração de 14 dias (2 semanas) para cada uma, dentro de um período de X meses. Como JIRA é uma ferramenta paga, decidimos utilizar Trello  para organizar visualmente nossas sprints, TASKS e entregas.
+Para versionamento de código, iremos utilizar duas ferramentas, o GIT e o GITHUB.O GIT irá nos proporcionar maior facilidade no trabalho em equipe devido a possIbilidade de rastreamento de código e trabalharmos em FEATURE BRANCHES, sendo que a cada MERGE 
+REQUEST o código passará por um REVIEW da equipe, para ser incorporado ao código principal. Já o GITHUB nos providencia um repositório completamente compatível com GIT, nos oferecendo controle de ISSUES e versões, relatórios e rastreamento de código via interface.O desenvolvimento do software será feito nos editores de texto, Sublime Text 3 e Visual Studio Code, dependendo do gosto do desenvolvedor, não sendo de maneira alguma um empecilho sua devida escolha por ser somente um editor de texto. 
+
+## TELAS DO PROJETO
 
 ## Página Inicial
  
@@ -112,12 +119,20 @@ O termo log em computação é tão utilizado que até no processo de se entrar 
 
 ![WhatsApp Image 2021-03-26 at 19 08 50 (1)](https://user-images.githubusercontent.com/51200123/112754146-38ceea80-8fb1-11eb-9507-08ad2e4a13d2.jpeg)
 
-## PESQUISA & CADASTRO DO VISITANTE
+## Pesquisa & Cadastro do Visitante
 
 ![WhatsApp Image 2021-03-26 at 19 08 51 (3)](https://user-images.githubusercontent.com/51200123/112753966-52bbfd80-8fb0-11eb-96fd-a082ae65f11d.jpeg)
 
 ![WhatsApp Image 2021-03-26 at 19 08 51](https://user-images.githubusercontent.com/51200123/112753493-1d161500-8fae-11eb-94b0-3ba626128ca2.jpeg)
 
 ![Cadastro VIsitante](https://user-images.githubusercontent.com/51200123/112753867-d0333e00-8faf-11eb-960f-bcf460ad2a0d.jpg)
+
+## Back-end
+
+![seg_info_db_antes_lgpd-2021-03-24_11-08](https://user-images.githubusercontent.com/51200123/112755619-cca3b500-8fb7-11eb-9738-6493c4a1f952.png)
+
+![seg_info_db_apos_lgpd-2021-03-24_11-18](https://user-images.githubusercontent.com/51200123/112755641-ef35ce00-8fb7-11eb-821a-dff8e69c0c75.png)
+
+![WhatsApp Image 2021-03-20 at 19 47 03](https://user-images.githubusercontent.com/51200123/111902628-2424ac80-8a1d-11eb-8058-66655cea162a.jpeg)
 
 
