@@ -126,7 +126,7 @@ Página de login do usuário (administração/portaria) já cadastrado:
 
 Página de busca de usuário (administração/portaria) já cadastrado, bem como o recurso de adição de usuário do sistema:
 
-![Cadastro Usuário](https://user-images.githubusercontent.com/51200123/112754587-150ca400-8fb3-11eb-809b-2185060ef5d6.jpg)
+![WhatsApp Image 2021-03-26 at 19 08 49 (1)](https://user-images.githubusercontent.com/51200123/112753225-16d36900-8fad-11eb-9aec-2884f2d772ba.jpeg)
 
 Página de inserção dos dados do usuário, a fim de cadastro:
 
@@ -140,9 +140,7 @@ Página de busca de visitante do condomínio já cadastrado, bem como o recurso 
 
 Página de inserção dos dados de visitante do condomínio:
 
-![WhatsApp Image 2021-03-26 at 19 08 51](https://user-images.githubusercontent.com/51200123/112753493-1d161500-8fae-11eb-94b0-3ba626128ca2.jpeg)
-
-![Cadastro VIsitante](https://user-images.githubusercontent.com/51200123/112753867-d0333e00-8faf-11eb-960f-bcf460ad2a0d.jpg)
+![Tela Visitante Agrupado](https://user-images.githubusercontent.com/51200123/112757830-bef32d00-8fc1-11eb-9009-9a83f772b4ee.png)
 
 ## 4.2.5 Back-end 
 
