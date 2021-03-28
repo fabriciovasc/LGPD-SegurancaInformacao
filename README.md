@@ -146,7 +146,7 @@ Página de inserção dos dados de visitante do condomínio:
 
 Tabela do database, antes da aplicação da solução de log:
 
-![seg_info_db_antes_lgpd-2021-03-24_11-08](https://user-images.githubusercontent.com/51200123/112755619-cca3b500-8fb7-11eb-9738-6493c4a1f952.png)
+![seg_info_db_antes_lgpd - Sem Imagem Vertabelo](https://user-images.githubusercontent.com/51200123/112757931-29a46880-8fc2-11eb-9d98-9de084064e06.png)
 
 Tabela do database, após aplicação da solução de log:
 
