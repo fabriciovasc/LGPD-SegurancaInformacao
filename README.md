@@ -25,7 +25,11 @@
 
 Atualmente, a globalização e a tecnologia trouxeram enormes facilidades no desenvolvimento de atividades de menor a maior complexidade, mas para isto, muitas vezes são utilizadas ferramentas ou recuros que precisam de grande quantidade de dados. Infelizmente, além de vantagens, trouxe também a violação e compartilhamento desenfreado de dados que deveriam ser privados,como por exemplo, a venda de dados de pessoas físicas de quem os detém para empresas de marketing de produtos e serviços gerais ou para crimes de estelionato.
 
+"O Brasil está entre os países que mais sofre ciberataques. Ou seja, aquelas situações nas quais os “hackers” tentam danificar, destruir ou violar uma rede ou sistema, prejudicando milhares de pessoas. O que muita gente não sabe é que, ao usar a internet, suas informações estão sendo coletadas e armazenadas. E são esses dados que, se encontrados pelos hackers, são usados para aplicar golpes e fraudes. O vazamento de dados confidenciais de 223 milhões de brasileiros e 40 milhões de CNPJs (que apareceram em fóruns usados por criminosos digitais) é um exemplo de ciberataque. O episódio de 19 de janeiro de 2021 foi apontado como o maior vazamento da história do Brasil." (https://socialgoodbrasil.org.br/2021/02/23/vazamento-de-dados-porque-privacidade-e-seguranca-precisam-virar-pautas-urgentes-em-nosso-dia-a-dia/?gclid=EAIaIQobChMIlILGsqrT7wIVigWRCh0FUwJKEAAYBCAAEgIZXfD_BwE)
+
 A Lei Geral de Proteção de Dados - LGPD (Lei n. 13.709/2018) tem o intuito de determinar as regras (padrão) na coleta e tratamento dos dados, seja de pessoa física ou jurídica, bem como instituir penalidades a quem transgredir com estas normas, a fim de proteger integralmente os direitos fundamentais à proteção integral à privacidade e liberdade.
+
+![LGPD-1](https://user-images.githubusercontent.com/51200123/112759197-5b203280-8fc8-11eb-80b6-d0056d220fcd.jpg)
 
 A LGPD veio para ser uma proteção ao cliente e exposição positiva ou negativa a quem utiliza e tem acesso aos dados, dependendo da aderência às regras.
 
