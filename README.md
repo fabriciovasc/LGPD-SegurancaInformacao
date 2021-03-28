@@ -96,4 +96,27 @@ O termo log em computação é tão utilizado que até no processo de se entrar 
 ## BACK-END
 
 ![WhatsApp Image 2021-03-20 at 19 47 03](https://user-images.githubusercontent.com/51200123/111902628-2424ac80-8a1d-11eb-8058-66655cea162a.jpeg)
+
+
+## PÁGINA INICIAL
  
+ ![WhatsApp Image 2021-03-26 at 19 08 49](https://user-images.githubusercontent.com/51200123/112753155-cc51ec80-8fac-11eb-9859-62900143b332.jpeg)
+ 
+## LOGIN
+
+![WhatsApp Image 2021-03-26 at 19 08 50 (2)](https://user-images.githubusercontent.com/51200123/112753348-9d884600-8fad-11eb-9f2f-3d318b7869bc.jpeg)
+ 
+## CADASTRO DO USUÁRIO
+
+![WhatsApp Image 2021-03-26 at 19 08 49 (1)](https://user-images.githubusercontent.com/51200123/112753225-16d36900-8fad-11eb-9aec-2884f2d772ba.jpeg)
+
+## PESQUISA & CADASTRO DO VISITANTE
+
+![WhatsApp Image 2021-03-26 at 19 08 50 (3)](https://user-images.githubusercontent.com/51200123/112753409-e50ed200-8fad-11eb-99bc-59dcea70064a.jpeg)
+
+![WhatsApp Image 2021-03-26 at 19 08 51](https://user-images.githubusercontent.com/51200123/112753493-1d161500-8fae-11eb-94b0-3ba626128ca2.jpeg)
+
+![Cadastro VIsitante](https://user-images.githubusercontent.com/51200123/112753867-d0333e00-8faf-11eb-960f-bcf460ad2a0d.jpg)
+
+![WhatsApp Image 2021-03-26 at 19 08 51 (3)](https://user-images.githubusercontent.com/51200123/112753966-52bbfd80-8fb0-11eb-96fd-a082ae65f11d.jpeg)
+
