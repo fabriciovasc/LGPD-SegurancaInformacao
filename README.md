@@ -95,54 +95,53 @@ O termo log em computação é tão utilizado que até no processo de se entrar 
 ## 4. SPRINT 1 - 15/03 A 28/03:
 
 Entregáveis da Sprint:
--	Técnicas e Ferramentas aplicáveis; ✔
+-	Definição das Ferramentas; ✔
 -	Minimum Viable Product (MVP). ✔
 
 ## 4.1 Ferramentas
 
-Por se tratar de uma plataforma web, definimos que iriamos trabalha com alguma linguagem que nos proporcione facilidade na criação de aplicações web. Visto que todos os integrantes já possuem uma certa familiaridade com a linguagem PYTHON, ficou decidido que esta será a linguagem que iremos utilizar no projeto como BACKEND. PYTHON nos providencia dois frameworks para trabalhos em aplicações web, tais como  DJANGO e FLASK. Em conversa com todos os integrantes, ficou decidido que o framework 
-Django será utilizado devido a sua vasta utilização em comparação ao FLASK dentro da 
-comunidade OPEN SOURCE.
+Por se tratar de uma plataforma web, definida a utilização de alguma linguagem que proporcione facilidade na criação de aplicações web. A linguagem PYTHON foi definida para o BACKEND, devido a familiaridade da equipe com a mesma, já que o PYTHON proporciona dois frameworks para trabalhos em aplicações web, tais como  FLASK e DJANG. O framework  Django foi o escolhido, devido a sua vasta utilização em comparação ao FLASK, dentro da comunidade OPEN SOURCE.
 
-Em FRONTEND, será utilizado HTML, CSS e JS, há a possibilidade de se implementar REACT.JS como parte do front para facilitar na criação de certos componentes e visuais. 
+Em FRONTEND, definida a utilização de HTML, CSS e JS, bem como a possibilidade de se implementar REACT.JS, a fim de facilitar na criação de certos visuais e componentes. 
 
-Para forma de organização da equipe, iremos utilizar a metodologia ágil conhecida como Scrum, sendo definidas 7 entregas com tempo de duração de 14 dias (2 semanas) para cada uma, dentro de um período de X meses. Como JIRA é uma ferramenta paga, decidimos utilizar Trello  para organizar visualmente nossas sprints, TASKS e entregas.
+Para forma de organização da equipe, iremos utilizar a metodologia ágil conhecida como Scrum e como o JIRA é uma ferramenta paga, decida a utilização do Trello para organizar visualmente nossas sprints, tasks e entregas.
 
-Para versionamento de código, iremos utilizar duas ferramentas, o GIT e o GITHUB.O GIT irá nos proporcionar maior facilidade no trabalho em equipe devido a possIbilidade de rastreamento de código e trabalharmos em FEATURE BRANCHES, sendo que a cada MERGE 
-REQUEST o código passará por um REVIEW da equipe, para ser incorporado ao código principal. Já o GITHUB nos providencia um repositório completamente compatível com GIT, nos oferecendo controle de ISSUES e versões, relatórios e rastreamento de código via interface.O desenvolvimento do software será feito nos editores de texto, Sublime Text 3 e Visual Studio Code, dependendo do gosto do desenvolvedor, não sendo de maneira alguma um empecilho sua devida escolha por ser somente um editor de texto. 
+Para versionamento de código, definidos o GIT e o GITHUB. O GIT irá nos proporcionar maior facilidade no trabalho em equipe, devido a possIbilidade de rastreamento de código e trabalharmos em FEATURE BRANCHES, sendo que a cada MERGE REQUEST, o código passará por um REVIEW da equipe, para ser incorporado ao código principal. Já o GITHUB nos providencia um repositório completamente compatível com GIT, nos oferecendo controle de ISSUES e versões, relatórios e rastreamento de código, via interface.
+
+O desenvolvimento do software será feito nos editores de texto, Sublime Text 3 e Visual Studio Code, dependendo do gosto do desenvolvedor, não sendo de maneira alguma um empecilho a sua escolha, por ser somente um editor de texto. 
 
 ## 4.2 Projeto
 
 ## 4.2.1 Página Inicial
 
-Página inicial do sistema:
+Segue página inicial, onde o usuário entrará no sistema:
  
  ![WhatsApp Image 2021-03-26 at 19 08 49](https://user-images.githubusercontent.com/51200123/112753155-cc51ec80-8fac-11eb-9859-62900143b332.jpeg)
  
 ## 4.2.2 Login
 
-Página de login do usuário (administração/portaria) já cadastrado:
+Segue página de login, onde o usuário (administração/portaria) já cadastrado, após inserção de login e senha, conseguirá interagir com o sistema:
 
 ![WhatsApp Image 2021-03-26 at 19 08 50 (2)](https://user-images.githubusercontent.com/51200123/112753348-9d884600-8fad-11eb-9f2f-3d318b7869bc.jpeg)
 
  
 ## 4.2.3 Pesquisa & Cadastro do Usuário
 
-Página de busca de usuário (administração/portaria) já cadastrado, bem como o recurso de adição de usuário do sistema:
+Nesta página, o usuário (administração) terá acesso à consulta, criação, inativação e edição dos dados de usuários, conforme segue:
 
 ![WhatsApp Image 2021-03-26 at 19 08 49 (1)](https://user-images.githubusercontent.com/51200123/112753225-16d36900-8fad-11eb-9aec-2884f2d772ba.jpeg)
 
-Página de inserção dos dados do usuário, a fim de cadastro:
+Formulário para inserção e edição de dados:
 
 ![WhatsApp Image 2021-03-26 at 19 08 50 (1)](https://user-images.githubusercontent.com/51200123/112754146-38ceea80-8fb1-11eb-9507-08ad2e4a13d2.jpeg)
 
 ## 4.2.4 Pesquisa & Cadastro do Visitante
 
-Página de busca de visitante do condomínio já cadastrado, bem como o recurso de adição de visitante no sistema:
+Nesta página, o usuário (administração/portaria) terá acesso à consulta, criação, inativação e edição dos dados de usuários (visitantes):
 
 ![WhatsApp Image 2021-03-26 at 19 08 51 (3)](https://user-images.githubusercontent.com/51200123/112753966-52bbfd80-8fb0-11eb-96fd-a082ae65f11d.jpeg)
 
-Página de inserção dos dados de visitante do condomínio:
+Formulário para inserção e edição de dados de visitante do condomínio:
 
 ![Tela Visitante Agrupado](https://user-images.githubusercontent.com/51200123/112757830-bef32d00-8fc1-11eb-9009-9a83f772b4ee.png)
 
@@ -152,7 +151,7 @@ Tabela do database, antes da aplicação da solução de log:
 
 ![seg_info_db_antes_lgpd - Sem Imagem Vertabelo](https://user-images.githubusercontent.com/51200123/112757931-29a46880-8fc2-11eb-9d98-9de084064e06.png)
 
-Tabela do database, após aplicação da solução de log:
+Tabela do database, após aplicação da solução de log de registro em relação à adição e atualização do usuário:
 
 ![seg_info_db_apos_lgpd-2021-03-24_11-18](https://user-images.githubusercontent.com/51200123/112755641-ef35ce00-8fb7-11eb-821a-dff8e69c0c75.png)
 
