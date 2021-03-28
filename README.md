@@ -31,6 +31,14 @@ A LGPD veio para ser uma proteção ao cliente e exposição positiva ou negativ
 
 Sendo assim, a disciplina de Segurança da Informação é de extrema importância para os futuros profissionais da área de TI, visto que proporcionará a oportunidade de obtenção de conhecimento a respeito da LGPD, através do estudo e desenvolvimento de um projeto prático em torno de um contexto, que será apresentado semanalmente neste repositório e nas aulas da disciplina.
 
+## Sprint 0 - 25/02 A 10/03:
+
+Entregáveis da Sprint:
+-	Organização da Equipe; ✔
+-	Criação do repositório; ✔
+-	Definição do tema; ✔
+-	Definição dos requisitos escolhidos da LGPD. ✔
+
 ## Contexto e Objetivo do Projeto:
 
 Considerando a proposta do projeto, escolhido o tema "Administração de Condomínio". Para contextualização, a denominação condomínio é utilizada quando um mesmo bem ou parte dele pertence a mais de uma pessoa, e todas envolvidas têm igual direito.  A administração de um condomínio é uma tarefa complexa, pois exige uma gestão total de seus processos e também de pessoas, onde podemos englobar a convocação para assembléias, cumprimento de regimento interno, conservação das áreas comuns, cobrança das taxas ordinárias e multas, prestação de contas, a representação do condomínio em juízo ou não, aplicação de multas a moradores, certificação do cumprimento da condomínios à legislação vigente, autorização de entrada e saída de visitantes, liberação de acesso aos moradores, manutenção preventiva e corretiva de equipamentos e edificações, controle das correspondências e encomendas, cadastro de moradores e seus veículos, entre outros.
@@ -65,14 +73,6 @@ Levando-se em consideração os pontos destacados acima, trataremos do desenvolv
 
 ![EAP](https://user-images.githubusercontent.com/51200123/111904317-1410cb00-8a25-11eb-9aae-06849d0707fa.png)
 
-## Sprint 0 - 25/02 A 10/03:
-
-Entregáveis da Sprint:
--	Organização da Equipe; ✔
--	Criação do repositório; ✔
--	Definição do tema; ✔
--	Definição dos requisitos escolhidos da LGPD. ✔
-
 ## Sprint 1 - 11/03 A 28/03:
 
 Entregáveis da Sprint:
@@ -98,27 +98,26 @@ O termo log em computação é tão utilizado que até no processo de se entrar 
 ![WhatsApp Image 2021-03-20 at 19 47 03](https://user-images.githubusercontent.com/51200123/111902628-2424ac80-8a1d-11eb-8058-66655cea162a.jpeg)
 
 
-## PÁGINA INICIAL
+## Página Inicial
  
  ![WhatsApp Image 2021-03-26 at 19 08 49](https://user-images.githubusercontent.com/51200123/112753155-cc51ec80-8fac-11eb-9859-62900143b332.jpeg)
  
-## LOGIN
+## Login
 
 ![WhatsApp Image 2021-03-26 at 19 08 50 (2)](https://user-images.githubusercontent.com/51200123/112753348-9d884600-8fad-11eb-9f2f-3d318b7869bc.jpeg)
  
-## CADASTRO DO USUÁRIO
+## Pesquisa & Cadastro do Usuário
 
-![WhatsApp Image 2021-03-26 at 19 08 49 (1)](https://user-images.githubusercontent.com/51200123/112753225-16d36900-8fad-11eb-9aec-2884f2d772ba.jpeg)
+![Cadastro Usuário](https://user-images.githubusercontent.com/51200123/112754587-150ca400-8fb3-11eb-809b-2185060ef5d6.jpg)
 
 ![WhatsApp Image 2021-03-26 at 19 08 50 (1)](https://user-images.githubusercontent.com/51200123/112754146-38ceea80-8fb1-11eb-9507-08ad2e4a13d2.jpeg)
 
 ## PESQUISA & CADASTRO DO VISITANTE
 
-![WhatsApp Image 2021-03-26 at 19 08 50 (3)](https://user-images.githubusercontent.com/51200123/112753409-e50ed200-8fad-11eb-99bc-59dcea70064a.jpeg)
+![WhatsApp Image 2021-03-26 at 19 08 51 (3)](https://user-images.githubusercontent.com/51200123/112753966-52bbfd80-8fb0-11eb-96fd-a082ae65f11d.jpeg)
 
 ![WhatsApp Image 2021-03-26 at 19 08 51](https://user-images.githubusercontent.com/51200123/112753493-1d161500-8fae-11eb-94b0-3ba626128ca2.jpeg)
 
 ![Cadastro VIsitante](https://user-images.githubusercontent.com/51200123/112753867-d0333e00-8faf-11eb-960f-bcf460ad2a0d.jpg)
 
-![WhatsApp Image 2021-03-26 at 19 08 51 (3)](https://user-images.githubusercontent.com/51200123/112753966-52bbfd80-8fb0-11eb-96fd-a082ae65f11d.jpeg)
 
