@@ -110,6 +110,8 @@ O termo log em computação é tão utilizado que até no processo de se entrar 
 
 ![WhatsApp Image 2021-03-26 at 19 08 49 (1)](https://user-images.githubusercontent.com/51200123/112753225-16d36900-8fad-11eb-9aec-2884f2d772ba.jpeg)
 
+![WhatsApp Image 2021-03-26 at 19 08 50 (1)](https://user-images.githubusercontent.com/51200123/112754146-38ceea80-8fb1-11eb-9507-08ad2e4a13d2.jpeg)
+
 ## PESQUISA & CADASTRO DO VISITANTE
 
 ![WhatsApp Image 2021-03-26 at 19 08 50 (3)](https://user-images.githubusercontent.com/51200123/112753409-e50ed200-8fad-11eb-99bc-59dcea70064a.jpeg)
