@@ -51,12 +51,6 @@
 
 > python manage.py makemigrations --settings project.settings.dev
 
-
-#### Para rodar a aplicação
-
-> python manage.py runserver --settings project.settings.dev
-
-
 #### Para logar na aplicação será necessário um usuário primário
 
 > python manage.py createsuperuser --settings project.settings.dev
@@ -69,3 +63,6 @@
 	Nome: Administrador
 	Senha: <senha>
 
+#### Para rodar a aplicação
+
+> python manage.py runserver --settings project.settings.dev
