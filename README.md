@@ -96,7 +96,10 @@ O termo log em computação é tão utilizado que até no processo de se entrar 
 
 Entregáveis da Sprint:
 -	Definição das Ferramentas; ✔
--	Minimum Viable Product (MVP). ✔
+-	Minimum Viable Product (MVP): ✔
+-	CRUD de visitante e morador. ✔
+-	Log de ações: Adição e edição. ✔
+-	Banco de dados. ✔
 
 ## 4.1 Ferramentas
 
