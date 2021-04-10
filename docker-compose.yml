@@ -1,0 +1,46 @@
+version: '3.7'
+
+services:
+  web:
+    image: seginfo_image
+    build:
+      context: .
+      args:
+        APP_NAME: ${APP_NAME}
+        ENVIRONMENT: ${ENVIRONMENT}
+    container_name: ${ENVIRONMENT}_${APP_NAME}
+    volumes:
+      - ./${APP_NAME}/:/usr/src/app/
+    ports:
+      - ${APP_PORT}:8080
+    environment:
+      - APP_NAME
+      - SECRET_KEY
+      - SQL_ENGINE
+      - SQL_DATABASE
+      - SQL_USER
+      - SQL_PASSWORD
+      - SQL_HOST
+      - SQL_PORT
+      - DJANGO_SETTINGS_MODULE
+
+    command: ["python", "manage.py", "runserver", "0.0.0.0:8080"]
+
+    depends_on:
+      - db
+
+  db:
+    # Em caso de postgis, utilizar essa imagem: postgis/postgis:12-2.5-alpine
+    image: postgres:12-alpine
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    container_name: ${ENVIRONMENT}_${APP_NAME}_db
+    environment:
+      - POSTGRES_USER=${SQL_USER}
+      - POSTGRES_PASSWORD=${SQL_PASSWORD}
+      - POSTGRES_DB=${SQL_DATABASE}
+    ports:
+      - ${DB_PORT}:5432
+
+volumes:
+  postgres_data:

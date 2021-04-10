@@ -1,6 +1,32 @@
 # Este README serve para informações do projeto
 
+# Rodando com Docker
 
+## Renomeie o arquivo .env_example para .env
+
+## Fazer o build da imagem
+
+	Estando no diretório que está o arquivo docker-compose:
+
+		$ docker-compose build
+
+## Aplicação as migrações ao banco de dados 
+
+	Estando no diretório que está o arquivo docker-compose:
+
+		$ docker-compose run --rm web python manage.py migrate
+
+## Subindo a aplicação
+
+	Estando no diretório que está o arquivo docker-compose:
+
+		$ docker-compose up
+
+		ou
+
+		$ docker-compose run --rm --service-ports web (Esse caso é serve para debugar o código)
+
+# Rodando sem Docker
 ## Clonar o repositório
 
 > git clone https://github.com/fabsvas/LGPD-SegurancaInformacao
