@@ -1,6 +1,6 @@
 from django.db import models
 from core.models import (UserAdd, UserUpd)
-
+from simple_history.models import HistoricalRecords
 
 class Visitante(UserAdd, UserUpd):
 
@@ -61,6 +61,8 @@ class Visitante(UserAdd, UserUpd):
         blank=True,
         null=True
     )
+
+    history = HistoricalRecords()
 
     def __str__(self):
         return self.nome

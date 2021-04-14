@@ -1,27 +1,3 @@
-# ****************************************************************************#
-#
-#           Use este arquivo para libs que devem estar presentes
-#
-#                 !! SOMENTE EM DESENVOLVIMENTO !!
-#
-# dentro da pasta **requirements** existem 3 arquivos para requirements:
-#    - `base.txt`: com libs python para PROD E DEV
-#    - `prod.txt`: com libs python somente para PROD + base.txt
-#    - `dev.txt`: com libs python somente para DEV + base.txt
-#
-#     PROD e DEV "importam" ou incluem as libs requerdidas em BASE.txt
-#
-# Se dor um pacote específico para PROD adicione o pacote em `prod.txt`
-# Se dor um pacote específico para DEV adicione o pacote em `dev.txt`
-# Se dor um pacote para o sistema (Dev e Prod) adicione o pacote em `base.txt`
-#
-#*****************************************************************************#
-
-
 -r base.txt
-
-# Adicionae Libs Para Desenvolvimento abaixo
-# ==========================================
-
 ipython==7.21.0
 pytest==5.4.2

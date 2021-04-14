@@ -3,7 +3,7 @@ from django.contrib.auth.models import (AbstractBaseUser, BaseUserManager,
                                         PermissionsMixin)
 from django.db import models
 from django.utils import timezone
-
+from simple_history.models import HistoricalRecords
 
 class UserManager(BaseUserManager):
 
@@ -33,7 +33,7 @@ class User(AbstractBaseUser, PermissionsMixin):
     is_active = models.BooleanField('ativo', default=True,)
     is_staff = models.BooleanField('administrador', default=False,)
     date_joined = models.DateTimeField('data de cadastro', auto_now_add=True)
-
+    history = HistoricalRecords()
     objects = UserManager()
 
     USERNAME_FIELD = 'email'
