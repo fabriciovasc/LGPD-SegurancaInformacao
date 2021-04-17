@@ -34,6 +34,25 @@ A Lei Geral de Proteção de Dados - LGPD (Lei n. 13.709/2018) tem o intuito de 
 A LGPD veio para ser uma proteção ao cliente e exposição positiva ou negativa a quem utiliza e tem acesso aos dados, dependendo da aderência às regras.
 
 Sendo assim, a disciplina de Segurança da Informação é de extrema importância para os futuros profissionais da área de TI, visto que proporcionará a oportunidade de obtenção de conhecimento a respeito da LGPD, através do estudo e desenvolvimento de um projeto prático em torno de um contexto, que será apresentado semanalmente neste repositório e nas aulas da disciplina.
+### Estrutura do Projeto:
+- **Sprint 0**:
+   - Análise e requisitos do sistema
+   - Construir arquitetura do projeto 
+   - Montar escopo de acordo com o tema abordado  
+      
+- **Sprint 1**:
+   - Aplicação de tratamento ao banco de dados
+   - Utilização de logs para controlhe de acesso
+   - Menejo dos logs para identificação de tratamento aos dados
+   
+- **Sprint 2**:
+   - Criação de tabelas de identificação,uma com e outra sem tratamento
+   - Backup da tabela de logs para proteção e análise de modificações dos mesmos
+
+- **Sprint 3**:
+   - 
+      
+      
 
 ## 3. SPRINT 0 - 21/02 A 14/03:
 
