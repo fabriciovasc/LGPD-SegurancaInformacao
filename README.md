@@ -47,13 +47,26 @@ Sendo assim, a disciplina de Segurança da Informação é de extrema importânc
    
 - **Sprint 2**:
    - Criação de tabelas de identificação,uma com e outra sem tratamento
-   - Backup da tabela de logs para proteção e análise de modificações dos mesmos
+   - Inclusão do Docker para realização dos backups dos valumes de dados
+   - Utilização dos Backups como meios de segurança para evitar alterações maliciosas nos logs
 
 - **Sprint 3**:
-   - 
-      
-      
+   - inicio de implementação de anomalização dos dados
+   - Identificação de possíveis melhorias nos fatores de segurança
+   - Estudar e masterizar a utilização dos logs de acesso e modificação
 
+- **Sprint 4**:
+   - Aprimorar os critérios de anomalização dos dados 
+   - Aplicar os procedimentos de Verificação da proteção dos dados 
+   - Adicionar as etapas de verificação de desvinculação da pessoa 
+   - Garantir sucesso ao dado anomalizado evitando aplicações da Lei LGPD
+   - Adptações para melhoria visual do sistema
+
+- **Sprint 5**:
+   - Refatoração do projeto 
+   - Teste e análise dos recursos e funcionalidades
+   - Garantia de dos fatores de proteção estarem funcionando corretamente
+      
 ## 3. SPRINT 0 - 21/02 A 14/03:
 
 Entregáveis da Sprint:
