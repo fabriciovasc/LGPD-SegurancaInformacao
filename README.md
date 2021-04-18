@@ -200,7 +200,7 @@ Tabela do database, após aplicação da solução de log de registro em relaç�
 
 5.1 Imagem de referência a tabela de logs demonstrando registro de todas as alterações realizadas:
 
-![tabelas de registro]()
+<img src="/assets/sprint-2.jpeg" alt="Tabelas de Logs"/>
 
 5.2 Docker:
    O docker agrupa partes de softwares de um sistema de arquivo completo e que abrange todos os recursos necessários para a sua execução. Por isso, é uma plataforma de containers.
