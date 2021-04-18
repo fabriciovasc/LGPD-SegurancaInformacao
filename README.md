@@ -192,4 +192,26 @@ Tabela do database, após aplicação da solução de log de registro em relaç�
 
 ![WhatsApp Image 2021-03-20 at 19 47 03](https://user-images.githubusercontent.com/51200123/111902628-2424ac80-8a1d-11eb-8058-66655cea162a.jpeg)
 
+## 5. SPRINT 2 - 16/03 A 18/04:
+- Aprimoramento da utilização de Logs
+- Construção de tabelas para memorização de alterações
+- Controlhe de acesso aprimorado, administrador possuí condição de visualizar todas ações ocorrentes
+- Implementação de Docker para backup dos volumes de Dados, concedendo mais segurança caso houver erros ou alterações inesperadas
+
+5.1 Imagem de referência a tabela de logs demonstrando registro de todas as alterações realizadas:
+
+![tabelas de registro]()
+
+5.2 Docker:
+   O docker agrupa partes de softwares de um sistema de arquivo completo e que abrange todos os recursos necessários para a sua execução. Por isso, é uma plataforma de containers.
+Isso significa que tudo pode ser instalado no servidor e é armazenado nos containers. Dessa forma, os mesmos softwares e as suas versões podem ter uma execução facilitada em qualquer ambiente de desenvolvimento.
+O que ocorre na prática é que o docker destaca recursos e usa bibliotecas de kernel em comum. Os itens empacotados — ou até mesmo um ambiente inteiro — são dispostos no container e se tornam portáveis, o que torna o trabalho conjunto mais eficiente. Ao mesmo tempo, a implantação pode ser feita em ambientes não heterogêneos.
+
+5.3 Vantagens do Docker: 
+   O Docker permite um uso mais eficiente dos recursos do sistema. As instâncias de aplicativos em container usam muito menos memória do que as máquinas virtuais, elas são inicializadas e interrompidas mais rapidamente e podem ser armazenadas muito mais densamente em um hardware host
+
+5.4 Backup de container:
+   Docker oferece Backup dos volumes de Dados, essa implementação garante a segurança dos dados criando uma instãncia separada guardando dados e criando postos de restauração. Essas ações são consideradas como fatores de segurança quanto a manipulação de dados, permitindo mais segurança caso haja perca parcial ou total do algum dado sensível ou de grande importância
+
+
 
