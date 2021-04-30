@@ -173,63 +173,7 @@ class BaseSearchForm(forms.Form):
         return qs
 
 
-class RelatedObjInitMixin(object):
-    related_obj_name_list = []
-
-    def __init__(self, *args, **kwargs):
-        for related_obj_name in self.related_obj_name_list:
-            setattr(self, related_obj_name, kwargs.pop(related_obj_name))
-        super().__init__(*args, **kwargs)
-
-
-class RelatedObjSaveMixin(object):
-    related_obj_name_list = []
-
-    def save(self, commit=True):
-        for related_obj_name in self.related_obj_name_list:
-            setattr(self.instance, related_obj_name, getattr(self, related_obj_name))
-        return super().save(commit=commit)
-
-
-class RelatedObjModelMixin(RelatedObjInitMixin, RelatedObjSaveMixin):
-    pass
-
-
-class CustomInlineFormSet(forms.BaseInlineFormSet):
-    def __init__(self, *args, **kwargs):
-        self.request_user = kwargs.pop('request_user')
-        super().__init__(*args, **kwargs)
-
-    def _construct_form(self, *args, **kwargs):
-        kwargs['request_user'] = self.request_user
-        return super()._construct_form(*args, **kwargs)
-
-
 class UserAddUpdFormMixin(forms.ModelForm):
-    '''recebe um usuário e usa este para "salvar" como  `user_add` ou `user_upd`.
-
-     form para ser usado com os modelos  'UserDateAdd'e 'UserDateUpd'.
-    a vew  deve ser passado um KEYWORD Parameter com o nome de `request_user`
-
-    :nota:
-        Existe um view mixin que passa o param  = `core.views.UserDateAddUpdFormMixin`.
-
-    kwargs:
-        request_user (type:User):  geralmente é passado o  request.user
-
-    :notes:
-        O `request_user` fica disponível após o __init__ do Base ser executado.
-        O  atributo `request_user` da classe contém o request user (`self.request_user`).
-
-        :Exemplo:
-
-            class TicketForm(UserAddUpdFormMixin):
-
-                def __init__(self, *args, **kwargs):
-                    super(TicketForm, self).__init__(*args, **kwargs)
-                    # usa o self.request_user para filtrar choices de um field
-                    self.fields['project'].quersyet = Project.objects.by_user(self.request_user)
-    '''
 
     def __init__(self, *args, **kwargs):
         self.request_user = kwargs.pop('request_user')

@@ -1,35 +1,11 @@
-import zipfile
-
-from tempfile import NamedTemporaryFile
-
 from django.apps import apps
-from django.contrib import messages
-from django.contrib.gis.shortcuts import render_to_kml
-from django.core.exceptions import ImproperlyConfigured
-from django.forms import models as model_forms
-from django.http import HttpResponse, JsonResponse, FileResponse
-from django.shortcuts import get_object_or_404
-from django.shortcuts import redirect
-from django.views.generic.base import View
-from django.views.generic.edit import DeleteView
 from django.views.generic.edit import FormMixin
 from django.views.generic.list import ListView
 
-
-from .mixins import JSONResponseMixin
-from .mixins import LoginRequiredMixin
 from .mixins import PaginationQueryStringMixin
 
 
 get_model = apps.get_model
-
-
-class JSONResponseView(JSONResponseMixin, View):
-    def get(self, request, *args, **kwargs):
-        return self.render_to_response({})
-
-    def render_to_response(self, context, **response_kwargs):
-        return self.render_to_json_response(context, **response_kwargs)
 
 
 class SearchFormListView(PaginationQueryStringMixin, FormMixin, ListView):
@@ -87,6 +63,3 @@ class SearchFormListView(PaginationQueryStringMixin, FormMixin, ListView):
             url_params=request.GET.urlencode()
         )
         return self.render_to_response(context)
-
-
-
