@@ -34,7 +34,39 @@ A Lei Geral de Proteção de Dados - LGPD (Lei n. 13.709/2018) tem o intuito de 
 A LGPD veio para ser uma proteção ao cliente e exposição positiva ou negativa a quem utiliza e tem acesso aos dados, dependendo da aderência às regras.
 
 Sendo assim, a disciplina de Segurança da Informação é de extrema importância para os futuros profissionais da área de TI, visto que proporcionará a oportunidade de obtenção de conhecimento a respeito da LGPD, através do estudo e desenvolvimento de um projeto prático em torno de um contexto, que será apresentado semanalmente neste repositório e nas aulas da disciplina.
+### Estrutura do Projeto:
+- **Sprint 0**:
+   - Análise e requisitos do sistema
+   - Construir arquitetura do projeto 
+   - Montar escopo de acordo com o tema abordado  
+      
+- **Sprint 1**:
+   - Aplicação de tratamento ao banco de dados
+   - Utilização de logs para controlhe de acesso
+   - Menejo dos logs para identificação de tratamento aos dados
+   
+- **Sprint 2**:
+   - Criação de tabelas de identificação,uma com e outra sem tratamento
+   - Inclusão do Docker para realização dos backups dos valumes de dados
+   - Utilização dos Backups como meios de segurança para evitar alterações maliciosas nos logs
 
+- **Sprint 3**:
+   - inicio de implementação de anomalização dos dados
+   - Identificação de possíveis melhorias nos fatores de segurança
+   - Estudar e masterizar a utilização dos logs de acesso e modificação
+
+- **Sprint 4**:
+   - Aprimorar os critérios de anomalização dos dados 
+   - Aplicar os procedimentos de Verificação da proteção dos dados 
+   - Adicionar as etapas de verificação de desvinculação da pessoa 
+   - Garantir sucesso ao dado anomalizado evitando aplicações da Lei LGPD
+   - Adptações para melhoria visual do sistema
+
+- **Sprint 5**:
+   - Refatoração do projeto 
+   - Teste e análise dos recursos e funcionalidades
+   - Garantia de dos fatores de proteção estarem funcionando corretamente
+      
 ## 3. SPRINT 0 - 21/02 A 14/03:
 
 Entregáveis da Sprint:
@@ -159,5 +191,27 @@ Tabela do database, após aplicação da solução de log de registro em relaç�
 ![seg_info_db_apos_lgpd-2021-03-24_11-18](https://user-images.githubusercontent.com/51200123/112755641-ef35ce00-8fb7-11eb-821a-dff8e69c0c75.png)
 
 ![WhatsApp Image 2021-03-20 at 19 47 03](https://user-images.githubusercontent.com/51200123/111902628-2424ac80-8a1d-11eb-8058-66655cea162a.jpeg)
+
+## 5. SPRINT 2 - 16/03 A 18/04:
+- Aprimoramento da utilização de Logs
+- Construção de tabelas para memorização de alterações
+- Controlhe de acesso aprimorado, administrador possuí condição de visualizar todas ações ocorrentes
+- Implementação de Docker para backup dos volumes de Dados, concedendo mais segurança caso houver erros ou alterações inesperadas
+
+### 5.1 Imagem de referência a tabela de logs demonstrando registro de todas as alterações realizadas:
+
+<img src="/assets/sprint-2.jpeg" alt="Tabelas de Logs"/>
+
+### 5.2 Docker:
+   O docker agrupa partes de softwares de um sistema de arquivo completo e que abrange todos os recursos necessários para a sua execução. Por isso, é uma plataforma de containers.
+Isso significa que tudo pode ser instalado no servidor e é armazenado nos containers. Dessa forma, os mesmos softwares e as suas versões podem ter uma execução facilitada em qualquer ambiente de desenvolvimento.
+O que ocorre na prática é que o docker destaca recursos e usa bibliotecas de kernel em comum. Os itens empacotados — ou até mesmo um ambiente inteiro — são dispostos no container e se tornam portáveis, o que torna o trabalho conjunto mais eficiente. Ao mesmo tempo, a implantação pode ser feita em ambientes não heterogêneos.
+
+### 5.3 Vantagens do Docker: 
+   O Docker permite um uso mais eficiente dos recursos do sistema. As instâncias de aplicativos em container usam muito menos memória do que as máquinas virtuais, elas são inicializadas e interrompidas mais rapidamente e podem ser armazenadas muito mais densamente em um hardware host
+
+### 5.4 Backup de container:
+   Docker oferece Backup dos volumes de Dados, essa implementação garante a segurança dos dados criando uma instãncia separada guardando dados e criando postos de restauração. Essas ações são consideradas como fatores de segurança quanto a manipulação de dados, permitindo mais segurança caso haja perca parcial ou total do algum dado sensível ou de grande importância
+
 
 
