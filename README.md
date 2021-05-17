@@ -46,26 +46,22 @@ Sendo assim, a disciplina de Segurança da Informação é de extrema importânc
    - Menejo dos logs para identificação de tratamento aos dados
    
 - **Sprint 2**:
-   - Criação de tabelas de identificação,uma com e outra sem tratamento
+   - Criação de tabelas de identificação, com e sem tratamento
    - Inclusão do Docker para realização dos backups dos valumes de dados
    - Utilização dos Backups como meios de segurança para evitar alterações maliciosas nos logs
 
 - **Sprint 3**:
-   - inicio de implementação de anomalização dos dados
+   - implementação de tabelas de identificação e manipulação de logs
    - Identificação de possíveis melhorias nos fatores de segurança
+   - Teste e análise dos recursos e funcionalidades
    - Estudar e masterizar a utilização dos logs de acesso e modificação
 
 - **Sprint 4**:
-   - Aprimorar os critérios de anomalização dos dados 
+   - Aprimorar os critérios de segurançae identificação com logs dos dados 
    - Aplicar os procedimentos de Verificação da proteção dos dados 
    - Adicionar as etapas de verificação de desvinculação da pessoa 
    - Garantir sucesso ao dado anomalizado evitando aplicações da Lei LGPD
    - Adptações para melhoria visual do sistema
-
-- **Sprint 5**:
-   - Refatoração do projeto 
-   - Teste e análise dos recursos e funcionalidades
-   - Garantia de dos fatores de proteção estarem funcionando corretamente
       
 ## 3. SPRINT 0 - 21/02 A 14/03:
 
@@ -212,6 +208,54 @@ O que ocorre na prática é que o docker destaca recursos e usa bibliotecas de k
 
 ### 5.4 Backup de container:
    Docker oferece Backup dos volumes de Dados, essa implementação garante a segurança dos dados criando uma instãncia separada guardando dados e criando postos de restauração. Essas ações são consideradas como fatores de segurança quanto a manipulação de dados, permitindo mais segurança caso haja perca parcial ou total do algum dado sensível ou de grande importância
+
+## 6. Sprint 3:
+- Atualização de tabelas de logs
+- Utilização das tabelas para organizção e visualização do fluxo de controle
+- Aprimoramento da utilização dos logs como fonte de obtenção de informações a respeito de modificações nos dados
+- Testes com análise visuais da exibição dos dados
+- Aferição ao fluxo para confirmação as correspondentes funções aplicadas
+
+### 6.1 Tabela de controle:
+
+<img src="/assets/history_table.jpeg" alt="Tabelas de historico"/>
+
+- history_date:
+   Coleta informações "DateTime" incluindo dia, mês, ano, hora, etc.  Essa informações são coletadas durante processo de ação no sistema, seja: incluindo, modificando ou atualizando informações, conforme a proposta da utilização do sistema.
+   
+- history_change_reason:
+   Destinado ao registro caso habilitado, responsável para declaração de e explicação de uma alteração ao registro.
+   
+- history_type: 
+   Indica qual tipo de ação foi realizada (Create: "+", Update:"~", Delete:"-")
+   
+- history_user_id / user_upd_id:
+   O nome se submete de acordo com a ação do usuário, devido a cada alteração possuir um histórico com informação de todas as ações incluindo o responsável e não somente o ultimo usuário a utilizar.
+   
+### 6.2 Mapeamento dos Dados:
+- Visualização das Informações obtidas durante a ação do usuário
+
+<img src="/assets/maping_table.jpeg" alt="Tabelas de Logs"/>
+
+### 6.3 Comparação de Dados:
+- Como visto anteriormente quando uma ação é relizada e gerado uma tabela contendo todas as informações da ação como explicado.
+- É feita uma validação contexto utilizando o ID da tabela com as informações do usuário em comparação com ID da tabela de com histórico que ações.
+- As informações das duas tabelas geradas são sincronizadas criando "volume", essa informação garante que que se saiba exatamente o que aconteceu com o registro, caracterizando o porquê, quando e quem o modificou.
+- É um fator de segurança para processos de Business Inteligence, facilitando pesquisa e verificação de dados.
+- Com esses métodos de gerenciamento de Logs certifica que é possível acompanhar/saber o que ocorre ou ocorreu no sistema.
+
+### 6.4 Processo
+- A primeira fase do gerenciamento de logs é a coleta. Nesse caso das ações realizadas no sistema
+- Após a coleta, vem a fase da ingestão de dados, que se refere à formatação e importação dos dados que ficam armazanados no banco de dados da aplicação. Então, os logs são formatados para permitir a inclusão de data e hora e demais detalhes que sejam considerados relevantes.
+- Já na terceira etapa, o gerenciamento de logs se encarrega de pesquisar e analisar, o que significa que é necessário fazer a pesquisa de cada linha dos dados e analisá-la.
+- Para se precaver de possíveis problemas e incidentes, o gerenciamento de logs permite a configuração de alertas. Mas, para isso, é necessário definir as regras para que as notificações sejam emitidas, ou seja, escolher quais atividades que são consideradas importantes ao ponto de precisarem de alertas.
+- Por último, é necessário escolher os níveis de visualização, além de relatar e detectar problemas de forma antecipada, gerando relatórios para que novas soluções possam ser pensadas.   
+
+Todo processo é adaptado ao sistema e pode ser aperfeiçoado conforme a necessidade da aplicação
+
+
+
+
 
 
 
