@@ -237,6 +237,8 @@ O que ocorre na prática é que o docker destaca recursos e usa bibliotecas de k
 
 <img src="/assets/maping_table.jpeg" alt="Tabelas de Logs"/>
 
+<img src="/assets/user_info.jpeg" alt="Tabelas de Informações"/>
+
 ### 6.3 Comparação de Dados:
 - Como visto anteriormente quando uma ação é relizada e gerado uma tabela contendo todas as informações da ação como explicado.
 - É feita uma validação contexto utilizando o ID da tabela com as informações do usuário em comparação com ID da tabela de com histórico que ações.
