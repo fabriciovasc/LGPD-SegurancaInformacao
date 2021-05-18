@@ -1,6 +1,6 @@
 # Este README serve para informações do projeto
 
-#Requisitos
+# Requisitos mínimos
 
 	docker
 	docker-compose
