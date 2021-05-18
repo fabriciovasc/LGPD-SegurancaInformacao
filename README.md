@@ -209,7 +209,7 @@ O que ocorre na prática é que o docker destaca recursos e usa bibliotecas de k
 ### 5.4 Backup de container:
    Docker oferece Backup dos volumes de Dados, essa implementação garante a segurança dos dados criando uma instãncia separada guardando dados e criando postos de restauração. Essas ações são consideradas como fatores de segurança quanto a manipulação de dados, permitindo mais segurança caso haja perca parcial ou total do algum dado sensível ou de grande importância
 
-## 6. Sprint 3:
+## 6. Sprint 3 19/04 A 16/05:
 - Atualização de tabelas de logs
 - Utilização das tabelas para organizção e visualização do fluxo de controle
 - Aprimoramento da utilização dos logs como fonte de obtenção de informações a respeito de modificações nos dados
