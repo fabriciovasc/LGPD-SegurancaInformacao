@@ -191,7 +191,7 @@ Tabela do database, após aplicação da solução de log de registro em relaç�
 ## 5. SPRINT 2 - 16/03 A 18/04:
 - Aprimoramento da utilização de Logs
 - Construção de tabelas para memorização de alterações
-- Controlhe de acesso aprimorado, administrador possuí condição de visualizar todas ações ocorrentes
+- Controlhe de acesso aprimorado, administrador possui condição de visualizar todas ações ocorrentes
 - Implementação de Docker para backup dos volumes de Dados, concedendo mais segurança caso houver erros ou alterações inesperadas
 
 ### 5.1 Imagem de referência a tabela de logs demonstrando registro de todas as alterações realizadas:
