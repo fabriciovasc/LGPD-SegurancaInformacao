@@ -61,8 +61,9 @@ Sendo assim, a disciplina de Segurança da Informação é de extrema importânc
    - Adicionar as etapas de verificação de desvinculação da pessoa 
    - Garantir sucesso ao dado anomalizado evitando aplicações da Lei LGPD
    - Adptações para melhoria visual do sistema
-- ** Passo a passo para executar o projeto **
-   -https://github.com/fabsvas/LGPD-SegurancaInformacao/tree/master/seg_info
+-  Passo a passo para executar o projeto 
+
+   - https://github.com/fabsvas/LGPD-SegurancaInformacao/tree/master/seg_info
       
 ## 3. SPRINT 0 - 21/02 A 14/03:
 
