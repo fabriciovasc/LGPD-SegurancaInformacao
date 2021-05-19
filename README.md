@@ -221,7 +221,7 @@ O que ocorre na prática é que o docker destaca recursos e usa bibliotecas de k
 <img src="/assets/history_table.jpeg" alt="Tabelas de historico"/>
 
 - history_date:
-   Coleta informações "DateTime" incluindo dia, mês, ano, hora, etc.  Essa informações são coletadas durante processo de ação no sistema, seja: incluindo, modificando ou atualizando informações, conforme a proposta da utilização do sistema.
+   Coleta informações "DateTime" incluindo dia, mês, ano, hora, etc.  Essas informações são coletadas quando alguma ação é executada no sistema, como: inclusão, modificação ou exclusão das informações, segundo a proposta da utilização do sistema.
    
 - history_change_reason:
    Destinado ao registro caso habilitado, responsável para declaração de e explicação de uma alteração ao registro.
