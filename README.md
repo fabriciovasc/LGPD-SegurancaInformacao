@@ -224,7 +224,7 @@ O que ocorre na prática é que o docker destaca recursos e usa bibliotecas de k
    Coleta informações "DateTime" incluindo dia, mês, ano, hora, etc.  Essas informações são coletadas quando alguma ação é executada no sistema, como: inclusão, modificação ou exclusão das informações, segundo a proposta da utilização do sistema.
    
 - history_change_reason:
-   Destinado ao registro caso habilitado, responsável para declaração de e explicação de uma alteração ao registro.
+   Destinado ao registro, caso habilitado, responsável para declaração e explicação de uma alteração no registro.
    
 - history_type: 
    Indica qual tipo de ação foi realizada (Create: "+", Update:"~", Delete:"-")
@@ -240,20 +240,20 @@ O que ocorre na prática é que o docker destaca recursos e usa bibliotecas de k
 <img src="/assets/user-info.jpeg" alt="Tabelas de Informações"/>
 
 ### 6.3 Comparação de Dados:
-- Como visto anteriormente quando uma ação é relizada e gerado uma tabela contendo todas as informações da ação como explicado.
-- É feita uma validação contexto utilizando o ID da tabela com as informações do usuário em comparação com ID da tabela de com histórico que ações.
-- As informações das duas tabelas geradas são sincronizadas criando "volume", essa informação garante que que se saiba exatamente o que aconteceu com o registro, caracterizando o porquê, quando e quem o modificou.
-- É um fator de segurança para processos de Business Inteligence, facilitando pesquisa e verificação de dados.
-- Com esses métodos de gerenciamento de Logs certifica que é possível acompanhar/saber o que ocorre ou ocorreu no sistema.
+- Como visto anteriormente, uma tabela é gerada com todas as informações, quando uma ação é executada.
+- É feita uma validação do contexto utilizando o ID da tabela com as informações do usuário em comparação com o ID da tabela de histórico de ações.
+- As informações das duas tabelas geradas são sincronizadas criando "volume". Essa informação garante que se saiba exatamente o que aconteceu com o registro, caracterizando o motivo, quando e quem o modificou.
+- É um fator de segurança para processos de __Business Intelligence__, facilitando pesquisa e verificação de dados.
+- Com esses métodos de gerenciamento de Logs é possível ter conhecimento do que ocorre ou ocorreu no sistema.
 
 ### 6.4 Processo
-- A primeira fase do gerenciamento de logs é a coleta. Nesse caso das ações realizadas no sistema
+- A primeira fase do gerenciamento de logs é a coleta das ações realizadas no sistema.
 - Após a coleta, vem a fase da ingestão de dados, que se refere à formatação e importação dos dados que ficam armazanados no banco de dados da aplicação. Então, os logs são formatados para permitir a inclusão de data e hora e demais detalhes que sejam considerados relevantes.
 - Já na terceira etapa, o gerenciamento de logs se encarrega de pesquisar e analisar, o que significa que é necessário fazer a pesquisa de cada linha dos dados e analisá-la.
 - Para se precaver de possíveis problemas e incidentes, o gerenciamento de logs permite a configuração de alertas. Mas, para isso, é necessário definir as regras para que as notificações sejam emitidas, ou seja, escolher quais atividades que são consideradas importantes ao ponto de precisarem de alertas.
 - Por último, é necessário escolher os níveis de visualização, além de relatar e detectar problemas de forma antecipada, gerando relatórios para que novas soluções possam ser pensadas.   
 
-Todo processo é adaptado ao sistema e pode ser aperfeiçoado conforme a necessidade da aplicação
+#### Todo processo é adaptado ao sistema e pode ser aperfeiçoado, conforme a necessidade da aplicação.
 
 
 
