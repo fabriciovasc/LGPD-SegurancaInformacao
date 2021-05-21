@@ -178,3 +178,5 @@ AUTHENTICATION_BACKENDS = (
     'rules.permissions.ObjectPermissionBackend',
     'django.contrib.auth.backends.ModelBackend',
 )
+
+SIMPLE_HISTORY_HISTORY_ID_USE_UUID = True

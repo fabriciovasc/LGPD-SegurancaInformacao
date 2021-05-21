@@ -1,6 +1,17 @@
 from django.db import models
 from core.models import (UserAdd, UserUpd)
+from hashid_field import HashidField
 from simple_history.models import HistoricalRecords
+
+
+# class HashHistoricalModel(models.Model):
+#     """
+#     Abstract model for history models tracking the hashID
+#     """
+#     hash_id = HashidField(salt='9CbtaVthDlAOySAiuz2Kgw2Y6sYUld9Wp5oC4Ar8Ss4OrKBAqx', min_length=50)
+
+#     class Meta:
+#         abstract = True
 
 class Visitante(UserAdd, UserUpd):
 

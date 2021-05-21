@@ -41,8 +41,3 @@ class VisitanteUpdateView(
     sub_current_section = 'visitantes'
     model = Visitante
     form_class = VisitanteForm
-
-    # def get_form(self, form_class=None):
-    #     form = super().get_form(form_class)
-    #     form['candidato'].field.choices = {}
-    #     return form

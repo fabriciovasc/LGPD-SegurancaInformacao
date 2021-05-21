@@ -19,17 +19,6 @@ class SearchFormListView(PaginationQueryStringMixin, FormMixin, ListView):
     by_user_method = 'by_user'
 
     def get_form_kwargs(self):
-        '''
-        este método altera o comportamento padrão do FORMixin.
-        Permite o uso do get_initial().
-        Carrega no `data` do form o dicionário do `initial`
-        quando:
-            1. o data está vazio
-            2. intial nao é vazio.
-            3. methodo http é um get
-
-            ps; thanks to @zokis
-        '''
 
         kw = super().get_form_kwargs()
         kw['data'] = {}

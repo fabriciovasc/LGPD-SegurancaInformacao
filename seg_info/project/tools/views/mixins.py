@@ -213,5 +213,3 @@ class PaginationQueryStringMixin(object):
         query_string.pop('page', '1')
         context['query_string'] = query_string.urlencode()
         return context
-
-
