@@ -257,7 +257,38 @@ O que ocorre na prática é que o docker destaca recursos e usa bibliotecas de k
 
 #### Todo processo é adaptado ao sistema e pode ser aperfeiçoado, conforme a necessidade da aplicação.
 
+## 7. Sprint 4 - 16/05 a 06/06:
+- Aprimorados os fatores de segurança nos registros
+- Verificação do fluxo dos registro 
+- Adição de identificador unico 
 
+### 7.1 Identificador unico universal:
+- UUID -  Universally Unique IDentifier 
+- UUID é um identificador universalmente exclusivo utilizado para identificação de qualquer coisa no mundo da computação. O UUID é um número de 128 bits representado por 32 dígitos hexadecimais, exibidos em cinco grupos separados por hifens, na forma textual8-4-4-4-12 sendo um total de 36 caracteres (32 caracteres alfanuméricos e 4 hifens).
+- Ele possibilita a identificação unica de uma informação em sistemas distribuídos, sem uma coordenação central. Neste contexto a palavra única deve ser tomada com o significado de “praticamente única” uma vez que os identificadores possuam um tamanho finito, é possível para dois itens diferentes compartilhar do mesmo identificador. O tamanho e o processo de geração do identificador necessitam ser selecionados de forma a tornar esta improbabilidade suficientemente na prática.
+- Versões:
+   - Em sua representação textual ´8-4-4-4-12´ o UUID possui um carácter em específico que representa a versão em que o mesmo foi gerado:
+      - Versão 1: São gerados a partir de um tempo e um node id (geralmente o endereço MAC).
+      - Versão 2: São gerados a partir de um identificador (geralmente um id de grupo ou usuário), tempo e um node id
+      - Versão 3: Produzem UUIDs gerados por hashing de um identificador de namespace e nome
+      - Versão 4: São gerados usando um número aleatório ou pseudo-aleatório.
+- Normalmente quando criamos uma tabela no banco de dados, adicionamos uma coluna ID (ou qualquer outro nome representativo) como chave primaria sendo auto-increment. Um ID auto-increment é um número inteiro que começa em 1 e é aumentado em +1 sempre que um novo registro é salvo no banco de dados. O problema dessa abordagem é que esse ID acaba sendo exposto nas URLs das aplicações para identificar um recurso em específico.
+- Outro ponto que merece atenção é a facilidade na manipulação do ID por ele ser um número inteiro incrementado em +1, pode ser facilmente forjado alterando-se a URL.
+- Outro exemplo de vunerabilidade: Alguém pode criar um robô (Bot, Crawler e etc…) que visite uma determinada URL, e dentro de um laço de repetição faça o incremento do ID para cada interação do laço, dessa forma o conteúdo da aplicação pode ser extraído por completo sem muito esforço…
+
+### 7.2 Vantagens:
+- Descentralização na criação de identificadores únicos:
+   - Como o UUID segue uma especificação, você pode gera-lo independente do ambiente ou linguagem de programação.
+- Facilidade na sincronização de dados:
+   - Se sua aplicação permitir o uso Offline, você pode gerar registros a partir do cliente e armazena-los localmente. Quando sua aplicação ficar online você não terá problemas ao sincronizar os dados com o servidor, uma vez que os UUIDs são descentralizados e únicos.
+- Omite a quantidade de registros criados em uma tabela.
+- Dificuldade a manipulação da URL:
+   - Aquele esquema de adicionar +1 não funciona com UUID.
+
+### 7.3 Empregabilidade no sistema:
+- UUID é uma ótima alternativa para criar identificadores exclusivos para seus registros, sem depender do banco de dados pra isso.
+- Garante que os registros sejam únicos.
+- Diminuí a vunerabilidade.
 
 
 
