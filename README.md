@@ -257,6 +257,8 @@ O que ocorre na prática é que o docker destaca recursos e usa bibliotecas de k
 
 #### Todo processo é adaptado ao sistema e pode ser aperfeiçoado, conforme a necessidade da aplicação.
 
+<br/>
+
 ## 7. Sprint 4 - 16/05 a 06/06:
 - Aprimorados os fatores de segurança nos registros
 - Verificação do fluxo dos registro 
