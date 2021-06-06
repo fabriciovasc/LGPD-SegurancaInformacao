@@ -56,7 +56,7 @@ Sendo assim, a disciplina de Segurança da Informação é de extrema importânc
    - Estudar e masterizar a utilização dos logs de acesso e modificação
 
 - **Sprint 4**:
-   - Aprimorar os critérios de segurançae identificação com logs dos dados 
+   - Aprimorar os critérios de segurança e identificação com logs dos dados 
    - Aplicar os procedimentos de Verificação da proteção dos dados 
    - Adicionar as etapas de verificação de desvinculação da pessoa 
    - Garantir sucesso ao dado anomalizado evitando aplicações da Lei LGPD
